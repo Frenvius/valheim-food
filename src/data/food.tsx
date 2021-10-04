@@ -266,7 +266,7 @@ const cookedFish: Food = {
 
 const deerStew: Food = {
   name: "Deer Stew",
-  icon: require("@assets/images/Deer_stew.png"),
+  icon: require("@assets/images/Deer_Stew.png"),
   cookedAt: COOKING_STATION,
   ingredients: [
     {
