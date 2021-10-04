@@ -1,21 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import Content from "./src";
+import { NativeBaseProvider, StorageManager, ColorMode } from "native-base";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
-export default function App() {
+// From https://docs.nativebase.io/color-mode#persisting-the-color-mode
+const colorModeManager: StorageManager = {
+  get: async () => {
+    try {
+      const val = await AsyncStorage.getItem("@color-mode");
+      return val === "dark" ? "dark" : "light";
+    } catch (e) {
+      return "light";
+    }
+  },
+  set: async (value: ColorMode) => {
+    try {
+      if (value) {
+        await AsyncStorage.setItem("@color-mode", value);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  },
+};
+
+export default function App(): React.ReactElement {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NativeBaseProvider colorModeManager={colorModeManager}>
+      <Content />
+    </NativeBaseProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

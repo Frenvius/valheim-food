@@ -12,12 +12,21 @@
     "super:fix": "yarn prettier:fix && yarn lint:fix"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.15.8",
     "expo": "~42.0.1",
     "expo-status-bar": "~1.0.4",
+    "jest-expo": "^42.1.0",
+    "native-base": "^3.2.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-paper": "^4.9.2",
+    "react-native-safe-area-context": "3.2.0",
+    "react-native-svg": "12.1.1",
+    "react-native-web": "~0.13.12",
+    "react-test-render": "^1.1.2",
+    "styled-components": "^5.3.1",
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
