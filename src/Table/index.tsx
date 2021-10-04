@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { ImageSourcePropType } from "react-native";
-import { Text, Image, HStack } from "native-base";
+import { Text, Image, HStack, Link, VStack } from "native-base";
 import { DataTable } from "react-native-paper";
 import foods, { Food } from "../data/food";
 import HeaderCol from "./HeaderCol";
@@ -9,12 +9,17 @@ import Cell from "./Cell";
 interface FoodCellProps {
   name: string;
   icon: ImageSourcePropType;
+  link: string;
 }
-const FoodCell: FunctionComponent<FoodCellProps> = ({ name, icon }) => {
+const FoodCell: FunctionComponent<FoodCellProps> = ({ name, icon, link }) => {
   return (
     <Cell>
-      <Image size="sm" source={icon} />
-      {name}
+      <Link href={link}>
+        <VStack alignItems="center">
+          <Image size="sm" source={icon} />
+          {name}
+        </VStack>
+      </Link>
     </Cell>
   );
 };
@@ -27,10 +32,12 @@ const IngredientItem: FunctionComponent<IngredientItemProps> = ({
   amount,
 }) => {
   return (
-    <HStack alignItems="center">
-      <Image size="xs" source={item.icon} />
-      <Text key={item.name}>{`${item.name} x${amount}`}</Text>
-    </HStack>
+    <Link href={item.link}>
+      <HStack alignItems="center">
+        <Image size="xs" source={item.icon} />
+        <Text key={item.name}>{`${item.name} x${amount}`}</Text>
+      </HStack>
+    </Link>
   );
 };
 
@@ -43,12 +50,12 @@ export default function Content(): React.ReactElement<unknown> {
         <HeaderCol>Preparation</HeaderCol>
         <HeaderCol>HEALTH</HeaderCol>
         <HeaderCol>STAMINA</HeaderCol>
-        <HeaderCol>HEALING(HP/TICK)</HeaderCol>
+        <HeaderCol>DURATION</HeaderCol>
       </DataTable.Header>
       {foods.map((food, idx) => {
         return (
           <DataTable.Row key={`${food.name}-${idx}`}>
-            <FoodCell name={food.name} icon={food.icon} />
+            <FoodCell name={food.name} icon={food.icon} link={food.link} />
             <Cell>
               {food.ingredients.length > 0 ? (
                 food.ingredients.map((ing) => {
@@ -74,7 +81,7 @@ export default function Content(): React.ReactElement<unknown> {
               <Text>{food.stamina}</Text>
             </Cell>
             <Cell>
-              <Text>{food.healing}</Text>
+              <Text>{`${food.duration}s`}</Text>
             </Cell>
           </DataTable.Row>
         );
