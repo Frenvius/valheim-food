@@ -5,7 +5,11 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "prettier:fix": "prettier --config .prettierrc \"**/*.{json,js,jsx,ts,tsx,css,scss,md}\" --write",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx,.json",
+    "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx,.json --fix",
+    "super:fix": "yarn prettier:fix && yarn lint:fix"
   },
   "dependencies": {
     "expo": "~42.0.1",
@@ -17,8 +21,17 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
-    "@types/react": "~16.9.35",
+    "@types/react": "^17.0.27",
     "@types/react-native": "~0.63.2",
+    "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-jest": "^24.5.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "prettier": "^2.4.1",
     "typescript": "~4.0.0"
   },
   "private": true
