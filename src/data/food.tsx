@@ -316,7 +316,7 @@ const mincedMeatSauce: Food = {
 
 const ooze: InedibleItem = {
   name: "Ooze",
-  icon: require("@assets/images/ooze.png"),
+  icon: require("@assets/images/Ooze.png"),
   link: "https://valheim.fandom.com/wiki/Ooze",
 };
 
