@@ -7,7 +7,7 @@ const CAULDRON_2 = "Cauldron lvl 2";
 const CAULDRON_3 = "Cauldron lvl 3";
 const CAULDRON_4 = "Cauldron lvl 4";
 const CAULDRON_OVEN = "Cauldron lvl 4 And Oven";
-interface InedibleItem {
+export interface InedibleItem {
   name: string;
   icon: ImageSourcePropType;
   link: string;
@@ -227,11 +227,11 @@ const queensJam: Food = {
   ingredients: [
     {
       item: raspberries,
-      amount: 8,
+      amount: 2,
     },
     {
       item: blueberries,
-      amount: (4 / 6).toFixed(2),
+      amount: parseFloat((4 / 6).toFixed(2)),
     },
   ],
   health: 14,
@@ -618,6 +618,7 @@ const eyescream: Food = {
   duration: 1500,
   link: "https://valheim.fandom.com/wiki/Eyescream",
 };
+
 const cloudberries: Food = {
   name: "Cloudberries",
   icon: require("@assets/images/Cloudberries.png"),
@@ -629,11 +630,13 @@ const cloudberries: Food = {
   duration: 15 * 60,
   link: "https://valheim.fandom.com/wiki/Cloudberries",
 };
-const loxMeat: Food = {
+
+const loxMeat: InedibleItem = {
   name: "Lox Meat",
   icon: require("@assets/images/Lox_meat.png"),
   link: "https://valheim.fandom.com/wiki/Lox_meat",
 };
+
 const cookedLoxMeat: Food = {
   name: "Cooked lox meat",
   icon: require("@assets/images/Cooked_lox_meat.png"),
@@ -650,11 +653,13 @@ const cookedLoxMeat: Food = {
   duration: 2000,
   link: "https://valheim.fandom.com/wiki/Cooked_lox_meat",
 };
-const barleyFlour: Food = {
+
+const barleyFlour: InedibleItem = {
   name: "Barley flour",
   icon: require("@assets/images/Barley_flour.png"),
   link: "https://valheim.fandom.com/wiki/Barley_flour",
 };
+
 const fishWraps: Food = {
   name: "Fish wraps",
   icon: require("@assets/images/Fish_wraps.png"),
@@ -675,6 +680,7 @@ const fishWraps: Food = {
   duration: 1500,
   link: "https://valheim.fandom.com/wiki/Fish_wraps",
 };
+
 const loxMeatPie: Food = {
   name: "Lox meat pie",
   icon: require("@assets/images/Lox_meat_pie.png"),
@@ -699,6 +705,7 @@ const loxMeatPie: Food = {
   duration: 1800,
   link: "https://valheim.fandom.com/wiki/Lox_meat_pie",
 };
+
 const bloodPudding: Food = {
   name: "Blood pudding",
   icon: require("@assets/images/Blood_pudding.png"),
@@ -723,6 +730,7 @@ const bloodPudding: Food = {
   duration: 1800,
   link: "https://valheim.fandom.com/wiki/Blood_pudding",
 };
+
 const bread: Food = {
   name: "Bread",
   icon: require("@assets/images/Bread.png"),
@@ -739,6 +747,7 @@ const bread: Food = {
   duration: 1500,
   link: "https://valheim.fandom.com/wiki/Bread",
 };
+
 const foods: Food[] = [
   raspberries,
   mushroom,

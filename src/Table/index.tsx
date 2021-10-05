@@ -7,7 +7,7 @@ import React, {
 import { ImageSourcePropType } from "react-native";
 import { Text, Image, HStack, Link, VStack } from "native-base";
 import { DataTable } from "react-native-paper";
-import foods, { Food } from "../data/food";
+import foods, { Food, InedibleItem } from "../data/food";
 import HeaderCol from "./HeaderCol";
 import Cell from "./Cell";
 import {
@@ -37,7 +37,7 @@ const FoodCell: FunctionComponent<FoodCellProps> = ({ name, icon, link }) => {
   );
 };
 interface IngredientItemProps {
-  item: Food;
+  item: Food | InedibleItem;
   amount: ImageSourcePropType;
 }
 const IngredientItem: FunctionComponent<IngredientItemProps> = ({
