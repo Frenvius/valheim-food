@@ -95,8 +95,7 @@ export default function Content(): React.ReactElement<unknown> {
 			id: 'stamina',
 			label: 'stamina',
 			minWidth: 10,
-			align: 'right',
-			format: (value: number) => value.toFixed(2),
+			align: 'right'
 		},
 		{
 			id: 'burn',
