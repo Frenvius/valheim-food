@@ -1,2 +1,3 @@
-.expo
-web-build
+package.json
+_package.json
+package-lock.json

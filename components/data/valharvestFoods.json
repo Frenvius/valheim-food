@@ -1,0 +1,403 @@
+{
+  "meatburrito": {
+    "name": "Meat Burrito",
+    "description": "There is no problem a burrito can't solve.",
+    "weight": 0.3,
+    "variants": null,
+    "food": 40,
+    "foodStamina": 25,
+    "foodBurnTime": 21,
+    "foodRegen": 4,
+    "maxStackSize": 15,
+    "foodColor": "#c4c8d3",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "DeerMeat", "Amount": 1},
+      {"Item": "pepper", "Amount": 1},
+      {"Item": "Onion", "Amount": 1},
+      {"Item": "BarleyFlour", "Amount": 1}
+    ]
+  },
+  "dragomellete": {
+    "name": "Dragon Omelette",
+    "description": null,
+    "weight": 1.2,
+    "variants": null,
+    "food": 95,
+    "foodStamina": 65,
+    "foodBurnTime": 40,
+    "foodRegen": 4,
+    "maxStackSize": 5,
+    "foodColor": "#8f6346",
+    "amount": 4,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "DragonEgg", "Amount": 1},
+      {"Item": "salt", "Amount": 1},
+      {"Item": "Thistle", "Amount": 4},
+      {"Item": "Onion", "Amount": 4}
+    ]
+  },
+  "riceEgg": {
+    "name": "Rice and Egg",
+    "description": null,
+    "weight": 0.6,
+    "variants": null,
+    "food": 45,
+    "foodStamina": 35,
+    "foodBurnTime": 35,
+    "foodRegen": 3,
+    "maxStackSize": 10,
+    "foodColor": "#b1c2d0",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "garlic", "Amount": 1},
+      {"Item": "rice", "Amount": 2},
+      {"Item": "rk_egg", "Amount": 1}
+    ]
+  },
+  "riceEggMeat": {
+    "name": "Rice Egg and Meat",
+    "description": null,
+    "weight": 0.8,
+    "variants": null,
+    "food": 60,
+    "foodStamina": 40,
+    "foodBurnTime": 30,
+    "foodRegen": 3,
+    "maxStackSize": 10,
+    "foodColor": "#b1c2d0",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "garlic", "Amount": 1},
+      {"Item": "rk_pork", "Amount": 1},
+      {"Item": "rice", "Amount": 2},
+      {"Item": "rk_egg", "Amount": 1}
+    ]
+  },
+  "eggMeat": {
+    "name": "Egg and Sausage",
+    "description": null,
+    "weight": 0.4,
+    "variants": null,
+    "food": 40,
+    "foodStamina": 30,
+    "foodBurnTime": 23,
+    "foodRegen": 3,
+    "maxStackSize": 10,
+    "foodColor": "#bd9f5a",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_grill",
+    "requirements": [
+      {"Item": "salt", "Amount": 2},
+      {"Item": "rk_pork", "Amount": 1},
+      {"Item": "rk_egg", "Amount": 1}
+    ]
+  },
+  "ramen": {
+    "name": "Ramen",
+    "description": null,
+    "weight": 0.7,
+    "variants": null,
+    "food": 50,
+    "foodStamina": 25,
+    "foodBurnTime": 30,
+    "foodRegen": 3,
+    "maxStackSize": 10,
+    "foodColor": "#c0a770",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "piece_cauldron",
+    "requirements": [
+      {"Item": "raw_pasta", "Amount": 1},
+      {"Item": "Carrot", "Amount": 1},
+      {"Item": "rk_egg", "Amount": 1},
+      {"Item": "Thistle", "Amount": 1}
+    ]
+  },
+  "cheese": {
+    "name": "Cheese",
+    "description": null,
+    "weight": 0.8,
+    "variants": null,
+    "food": 30,
+    "foodStamina": 40,
+    "foodBurnTime": 28,
+    "foodRegen": 3,
+    "maxStackSize": 10,
+    "foodColor": "#c5b034",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "milk_bottle", "Amount": 4}
+    ]
+  },
+  "spaghetti": {
+    "name": "Spaghetti",
+    "description": null,
+    "weight": 0.5,
+    "variants": null,
+    "food": 50,
+    "foodStamina": 35,
+    "foodBurnTime": 26,
+    "foodRegen": 4,
+    "maxStackSize": 10,
+    "foodColor": "#9a6331",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "tomato", "Amount": 1},
+      {"Item": "salt", "Amount": 1},
+      {"Item": "raw_pasta", "Amount": 1}
+    ]
+  },
+  "taco": {
+    "name": "Taco",
+    "description": null,
+    "weight": 0.2,
+    "variants": null,
+    "food": 35,
+    "foodStamina": 40,
+    "foodBurnTime": 25,
+    "foodRegen": 3,
+    "maxStackSize": 15,
+    "foodColor": "#d69645",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "rk_pork", "Amount": 1},
+      {"Item": "pepper", "Amount": 2},
+      {"Item": "tomato", "Amount": 1},
+      {"Item": "BarleyFlour", "Amount": 1}
+    ]
+  },
+  "riceBall": {
+    "name": "Onigiri",
+    "description": null,
+    "weight": 0.2,
+    "variants": null,
+    "food": 25,
+    "foodStamina": 40,
+    "foodBurnTime": 22,
+    "foodRegen": 3,
+    "maxStackSize": 20,
+    "foodColor": "#bd9f5a",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "rice", "Amount": 2}
+    ]
+  },
+  "riceBowl": {
+    "name": "Rice Bowl",
+    "description": null,
+    "weight": 0.5,
+    "variants": null,
+    "food": 30,
+    "foodStamina": 50,
+    "foodBurnTime": 30,
+    "foodRegen": 3,
+    "maxStackSize": 10,
+    "foodColor": "#bd9f5a",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "rice", "Amount": 4}
+    ]
+  },
+  "sushi": {
+    "name": "Sushi",
+    "description": null,
+    "weight": 0.3,
+    "variants": null,
+    "food": 50,
+    "foodStamina": 40,
+    "foodBurnTime": 25,
+    "foodRegen": 3,
+    "maxStackSize": 20,
+    "foodColor": "#bd9f5a",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "rice", "Amount": 2},
+      {"Item": "FishRaw", "Amount": 1}
+    ]
+  },
+  "mashedPotatos": {
+    "name": "Mashed Potato",
+    "description": null,
+    "weight": 0.4,
+    "variants": null,
+    "food": 35,
+    "foodStamina": 45,
+    "foodBurnTime": 20,
+    "foodRegen": 3,
+    "maxStackSize": 20,
+    "foodColor": "#a9adab",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "potato", "Amount": 3},
+      {"Item": "Thistle", "Amount": 1},
+      {"Item": "salt", "Amount": 1}
+    ]
+  },
+  "cheese_sandwich": {
+    "name": "Cheese Sandwich",
+    "description": null,
+    "weight": 0.4,
+    "variants": null,
+    "food": 50,
+    "foodStamina": 70,
+    "foodBurnTime": 20,
+    "foodRegen": 3,
+    "maxStackSize": 20,
+    "foodColor": "#bca06a",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "Bread", "Amount": 2},
+      {"Item": "cheese", "Amount": 1}
+    ]
+  },
+  "egg_fried_bread": {
+    "name": "Egg Fried Bread",
+    "description": null,
+    "weight": 0.4,
+    "variants": null,
+    "food": 35,
+    "foodStamina": 30,
+    "foodBurnTime": 20,
+    "foodRegen": 3,
+    "maxStackSize": 20,
+    "foodColor": "#8eb849",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "Bread", "Amount": 1},
+      {"Item": "Thistle", "Amount": 3},
+      {"Item": "rk_egg", "Amount": 2}
+    ]
+  },
+  "potato_slices": {
+    "name": "Potato Slices",
+    "description": null,
+    "weight": 0.4,
+    "variants": null,
+    "food": 55,
+    "foodStamina": 65,
+    "foodBurnTime": 20,
+    "foodRegen": 3,
+    "maxStackSize": 20,
+    "foodColor": "#83693a",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "potato", "Amount": 4},
+      {"Item": "Thistle", "Amount": 3},
+      {"Item": "salt", "Amount": 2}
+    ]
+  },
+  "potatoes_boiled": {
+    "name": "Boiled Potatoes",
+    "description": null,
+    "weight": 0.4,
+    "variants": null,
+    "food": 45,
+    "foodStamina": 45,
+    "foodBurnTime": 20,
+    "foodRegen": 3,
+    "maxStackSize": 20,
+    "foodColor": "#bec27f",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "potato", "Amount": 2},
+      {"Item": "tomato", "Amount": 1},
+      {"Item": "Thistle", "Amount": 2},
+      {"Item": "rk_pork", "Amount": 1}
+    ]
+  },
+  "ramen_tonkotsu": {
+    "name": "Tonkotsu Ramen",
+    "description": null,
+    "weight": 0.8,
+    "variants": null,
+    "food": 65,
+    "foodStamina": 25,
+    "foodBurnTime": 35,
+    "foodRegen": 4,
+    "maxStackSize": 10,
+    "foodColor": "#a3797f",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "piece_cauldron",
+    "requirements": [
+      {"Item": "raw_pasta", "Amount": 1},
+      {"Item": "rk_pork", "Amount": 1},
+      {"Item": "rk_egg", "Amount": 1},
+      {"Item": "Thistle", "Amount": 2}
+    ]
+  },
+  "spaghetti_meatballs": {
+    "name": "Spaghetti and Meatballs",
+    "description": null,
+    "weight": 0.6,
+    "variants": null,
+    "food": 65,
+    "foodStamina": 45,
+    "foodBurnTime": 30,
+    "foodRegen": 4,
+    "maxStackSize": 10,
+    "foodColor": "#9a6331",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "tomato", "Amount": 1},
+      {"Item": "salt", "Amount": 1},
+      {"Item": "raw_pasta", "Amount": 1},
+      {"Item": "rk_pork", "Amount": 1}
+    ]
+  },
+  "apple_honey": {
+    "name": "Spaghetti and Meatballs",
+    "description": null,
+    "weight": 0.6,
+    "variants": null,
+    "food": 65,
+    "foodStamina": 45,
+    "foodBurnTime": 30,
+    "foodRegen": 4,
+    "maxStackSize": 10,
+    "foodColor": "#9a6331",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "craftingStation": "rk_prep",
+    "requirements": [
+      {"Item": "tomato", "Amount": 1},
+      {"Item": "salt", "Amount": 1},
+      {"Item": "raw_pasta", "Amount": 1},
+      {"Item": "rk_pork", "Amount": 1}
+    ]
+  }
+}

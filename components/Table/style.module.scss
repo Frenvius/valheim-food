@@ -1,0 +1,24 @@
+.foodTable {
+	.foodTableRow {
+
+	}
+
+	.foodTableCell {
+		padding: 0;
+	}
+}
+
+.recipe_cell {
+	width: 400px;
+	text-align: left;
+	margin-left: 10px;
+
+	div {
+		width: 25%;
+		display: inline-block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		vertical-align: middle;
+	}
+}
