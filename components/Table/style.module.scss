@@ -1,10 +1,22 @@
 .foodTable {
+	.foodTableHead {
+		padding: 5px 0;
+
+		&--recipe {
+			text-align: center;
+		}
+	}
+
 	.foodTableRow {
 
 	}
 
 	.foodTableCell {
 		padding: 0;
+
+		&--image, &--food, &--stamina, &--burn {
+			text-align: center;
+		}
 	}
 }
 

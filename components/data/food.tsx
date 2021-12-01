@@ -31,6 +31,7 @@ const parseValharvestFoods = () => {
 	const foodObject = JSON.parse(json);
 	for(const item in foodObject) {
 		foodArr.push({
+			image: '/img/valharvest/' + item + '_icon.png',
 			name: foodObject[item].name,
 			food: foodObject[item].food,
 			stamina: foodObject[item].foodStamina,
@@ -49,13 +50,16 @@ const parseFoods = (valheimFoods: boolean) => {
 
 	if (valheimFoods) {
 		for(let i = 0; i < itemDropList.length; i++) {
-			if (itemDropList[i].m_itemData.m_shared.m_itemType == 'Consumable') {
+			const foodItem = itemDropList[i].m_itemData.m_shared;
+			const foodName = foodItem.m_name_EN;
+			if (foodItem.m_itemType == 'Consumable' && foodItem.m_food > 0) {
 				foodList.push({
-					name: itemDropList[i].name,
-					food: itemDropList[i].m_itemData.m_shared.m_food,
-					stamina: itemDropList[i].m_itemData.m_shared.m_foodStamina,
-					regen: itemDropList[i].m_itemData.m_shared.m_foodRegen,
-					burn: itemDropList[i].m_itemData.m_shared.m_foodBurnTime,
+					image: '/img/' + foodName.replace(/ /g,'_') + '.png',
+					name: foodName,
+					food: foodItem.m_food,
+					stamina: foodItem.m_foodStamina,
+					regen: foodItem.m_foodRegen,
+					burn: foodItem.m_foodBurnTime,
 					recipe: getItemRecipe(itemDropList[i].name)
 				});
 			}

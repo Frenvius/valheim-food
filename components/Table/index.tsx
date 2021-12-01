@@ -7,11 +7,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
+import Image from 'next/image';
 
-
-import { Text, Image, HStack, Link, VStack } from 'native-base';
 import parseFoods from '../data/food';
-import HeaderCol from './HeaderCol';
 import RecipeCell from './RecipeCell';
 
 import style from './style.module.scss';
@@ -39,7 +37,7 @@ import style from './style.module.scss';
 // }
 
 interface Column {
-	id: 'food' | 'health' | 'stamina' | 'duration' | 'recipe';
+	id: 'image' | 'food' | 'health' | 'stamina' | 'duration' | 'recipe';
 	label: string;
 	minWidth?: number;
 	align?: 'right';
@@ -83,30 +81,31 @@ export default function Content(): React.ReactElement<unknown> {
 	};
 
 	const columns: readonly Column[] = [
+		{ id: 'image', label: 'Image' },
 		{ id: 'name', label: 'Name', minWidth: 5 },
 		{
 			id: 'food',
-			label: 'health',
+			label: 'Health',
 			minWidth: 10,
 			align: 'right',
 			format: (value: number) => value.toLocaleString('en-US'),
 		},
 		{
 			id: 'stamina',
-			label: 'stamina',
+			label: 'Stamina',
 			minWidth: 10,
 			align: 'right'
 		},
 		{
 			id: 'burn',
-			label: 'duration',
+			label: 'Burn',
 			minWidth: 10,
 			align: 'right',
 			format: (value: number) => value.toFixed(2),
 		},
 		{
 			id: 'recipe',
-			label: 'ingredients',
+			label: 'Ingredients',
 			align: 'right',
 			// format: (value: number) => value.,
 		}
@@ -117,12 +116,6 @@ export default function Content(): React.ReactElement<unknown> {
 	};
 
 	const foodList = parseFoods(valheimFood);
-
-	// const getRecipeItems = (food: Food): string[] => {
-	// 	return food.ingredients.map(ingredient => ingredient.name);
-	// };
-
-	// console.log(foodList);
 
 	return (
 		<>
@@ -139,6 +132,7 @@ export default function Content(): React.ReactElement<unknown> {
 									key={column.id}
 									align={column.align}
 									style={{ minWidth: column.minWidth }}
+									className={`${style.foodTableHead} ${style['foodTableHead--'+column.id]}`}
 								>
 									{column.label}
 								</TableCell>
@@ -148,20 +142,22 @@ export default function Content(): React.ReactElement<unknown> {
 					<TableBody>
 						{foodList
 							.map((row) => {
+								console.log(row);
 								return (
-									<TableRow hover role="checkbox" tabIndex={-1} key={row.code}>
+									<TableRow hover role="checkbox" tabIndex={-1} key={row.name}>
 										{columns.map((column) => {
 											const value = row[column.id];
 											const isRecipeCell = column.id === 'recipe';
+											const isImageCell = column.id === 'image';
 											return (
-												<TableCell key={column.id} align={column.align} className={style.foodTableCell}>
+												<TableCell key={column.id} align={column.align} className={`${style.foodTableCell} ${style['foodTableCell--'+column.id]}`}>
 													{isRecipeCell ? (
 														<RecipeCell
 															ingredients={value}
 														/>
-													) : column.format && typeof value === 'number'
-														? column.format(value)
-														: value}
+													) : isImageCell ? (
+														<Image src={value} width="32" height="32" />
+													) : value}
 												</TableCell>
 											);
 										})}
