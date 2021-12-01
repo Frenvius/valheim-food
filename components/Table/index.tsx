@@ -5,36 +5,12 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
-import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
-import Image from 'next/image';
 
 import parseFoods from '../data/food';
 import RecipeCell from './RecipeCell';
 
 import style from './style.module.scss';
-
-// interface FoodCellProps {
-// 	name: string;
-// 	icon: ImageSourcePropType;
-// 	link: string;
-// }
-// const FoodCell: FunctionComponent<FoodCellProps> = ({ name, icon, link }) => {
-// 	return (
-// 		<Cell>
-// 			<Link href={link}>
-// 				<VStack alignItems="center">
-// 					<Image size="sm" source={icon} alt={name} />
-// 					{name}
-// 				</VStack>
-// 			</Link>
-// 		</Cell>
-// 	);
-// };
-// interface IngredientItemProps {
-// 	item: Food | InedibleItem;
-// 	amount: ImageSourcePropType;
-// }
 
 interface Column {
 	id: 'image' | 'food' | 'health' | 'stamina' | 'duration' | 'recipe';
@@ -51,20 +27,6 @@ interface Data {
 	size: number;
 	density: number;
 }
-
-// const IngredientItem: FunctionComponent<IngredientItemProps> = ({
-// 	item,
-// 	amount
-// }) => {
-// 	return (
-// 		<Link href={item.link}>
-// 			<HStack alignItems="center">
-// 				<Image size="xs" source={item.icon} alt={item.name} />
-// 				<Text key={item.name}>{`${item.name} x${amount}`}</Text>
-// 			</HStack>
-// 		</Link>
-// 	);
-// };
 
 export default function Content(): React.ReactElement<unknown> {
 	const [valheimFood, setValheimFood] = React.useState(false);
@@ -156,7 +118,7 @@ export default function Content(): React.ReactElement<unknown> {
 															ingredients={value}
 														/>
 													) : isImageCell ? (
-														<Image src={value} width="32" height="32" />
+														<img src={value} width="32" height="32" />
 													) : value}
 												</TableCell>
 											);
