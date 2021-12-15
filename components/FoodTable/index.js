@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Image from 'next/image'
 import MaterialTable from 'material-table';
 
 import parseFoods from '../data/foods';
@@ -20,11 +19,11 @@ const FoodTable = () => {
             render: rowData => {
                 return (
                     <div style={{ width: '32px' }}>
-                        <Image
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
                             src={`${rowData.image}`}
                             alt={`${rowData.name}`}
-                            width={32}
-                            height={32}
+                            width="32px"
                         />
                     </div>
                 );
