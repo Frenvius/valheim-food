@@ -1,38 +1,23 @@
 {
-	"scripts": {
-		"start": "next",
-		"build": "next build",
-		"dev": "next",
-		"test": "next test --env=jsdom"
-	},
-	"dependencies": {
-		"@emotion/react": "^11.7.0",
-		"@emotion/styled": "^11.6.0",
-		"@mui/material": "^5.2.1",
-		"@react-native-async-storage/async-storage": "^1.15.8",
-		"jest-expo": "^42.1.0",
-		"native-base": "^3.2.0",
-		"next": "^12.0.4",
-		"node-sass": "^6.0.1",
-		"react": "^17.0.2",
-		"react-dom": "16.13.1",
-		"react-test-render": "^1.1.2",
-		"styled-components": "^5.3.1",
-		"styled-system": "^5.1.5"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.9.0",
-		"@types/react": "^17.0.27",
-		"@typescript-eslint/eslint-plugin": "^4.33.0",
-		"@typescript-eslint/parser": "^4.33.0",
-		"eslint": "^7.32.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-config-react": "^1.1.7",
-		"eslint-plugin-jest": "^24.5.2",
-		"eslint-plugin-prettier": "^4.0.0",
-		"eslint-plugin-react": "^7.26.1",
-		"prettier": "^2.5.0",
-		"typescript": "^4.5.2"
-	},
-	"private": true
+  "name": "valheim-food-new",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "material-table": "^1.69.3",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "sass": "^1.45.0"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "12.0.7"
+  }
 }

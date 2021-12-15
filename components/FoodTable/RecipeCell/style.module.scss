@@ -1,0 +1,36 @@
+.foodTable {
+  .foodTableHead {
+    padding: 5px 0;
+
+    &--recipe {
+      text-align: center;
+    }
+  }
+
+  .foodTableRow {
+
+  }
+
+  .foodTableCell {
+    padding: 0;
+
+    &--image, &--food, &--stamina, &--burn {
+      text-align: center;
+    }
+  }
+}
+
+.recipe_cell {
+  width: 400px;
+  text-align: left;
+  margin-left: 10px;
+
+  div {
+    width: 25%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+}
