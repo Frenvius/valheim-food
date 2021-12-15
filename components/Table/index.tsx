@@ -66,6 +66,13 @@ export default function Content(): React.ReactElement<unknown> {
 			format: (value: number) => value.toFixed(2),
 		},
 		{
+			id: 'prefab',
+			label: 'Prefab ID',
+			minWidth: 10,
+			align: 'center',
+			format: (value: number) => value.toFixed(2),
+		},
+		{
 			id: 'recipe',
 			label: 'Ingredients',
 			align: 'right',
@@ -104,7 +111,6 @@ export default function Content(): React.ReactElement<unknown> {
 					<TableBody>
 						{foodList
 							.map((row) => {
-								console.log(row);
 								return (
 									<TableRow hover role="checkbox" tabIndex={-1} key={row.name}>
 										{columns.map((column) => {
