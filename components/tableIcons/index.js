@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { forwardRef } from 'react';
 
 import AddBox from '@material-ui/icons/AddBox';
