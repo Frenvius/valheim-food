@@ -1,5 +1,5 @@
 {
-  "name": "valheim-food-new",
+  "name": "valheim-food",
   "private": true,
   "scripts": {
     "dev": "next dev",
