@@ -37,6 +37,7 @@ const parseValharvestFoods = () => {
             stamina: foodObject[item].foodStamina,
             regen: foodObject[item].foodRegen,
             burn: foodObject[item].foodBurnTime,
+            station: foodObject[item].craftingStation,
             prefab: item,
             recipe: getValharvestRecipe(foodObject[item].requirements)
         });
