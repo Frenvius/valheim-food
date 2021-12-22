@@ -3364,7 +3364,7 @@
 		"raw_name": "Cooked lox meat",
 		"var_name": "$item_wolf_skewer",
 		"true_name": "Recipe_CookedLoxMeat",
-		"true_crafting_station_name": "Piece_ironcookingstation",
+		"true_crafting_station_name": "piece_ironcookingstation",
 		"requirements": [
 			{
 				"amount": 1,
