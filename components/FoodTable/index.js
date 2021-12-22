@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Checkbox from '@mui/material/Checkbox';
 import MaterialTable from '@material-table/core';
+import { styled } from '@mui/material/styles';
+import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
 
 import parseFoods from '../data/foods';
 import tableIcons from '../tableIcons';
@@ -18,6 +20,15 @@ const FoodTable = () => {
 		}
 	};
 
+	const HtmlTooltip = styled(({ className, ...props }) => (
+		<Tooltip {...props} classes={{ popper: className }} placement="top" arrow />
+	))(({ theme }) => ({
+		[`& .${tooltipClasses.tooltip}`]: {
+			backgroundColor: '#707070',
+			maxWidth: 220
+		}
+	}));
+
 	const columns = [
 		{
 			field: 'image',
@@ -31,7 +42,10 @@ const FoodTable = () => {
 				return (
 					<div style={{ width: '32px' }}>
 						{/* eslint-disable-next-line @next/next/no-img-element */}
-						<img src={`${rowData.image}`} alt={`${rowData.name}`} width="32px" />
+						<HtmlTooltip title={<img src={`${rowData.image}`} alt={`${rowData.name}`} width="128px" />}>
+							{/* eslint-disable-next-line @next/next/no-img-element */}
+							<img src={`${rowData.image}`} alt={`${rowData.name}`} width="32px" />
+						</HtmlTooltip>
 					</div>
 				);
 			}
@@ -61,7 +75,8 @@ const FoodTable = () => {
 		{
 			field: 'burn',
 			title: 'Burn',
-			width: 10,
+			width: 60,
+			minWidth: 60,
 			align: 'left',
 			cellStyle: { padding: '5px' },
 			headerStyle: headerStyle

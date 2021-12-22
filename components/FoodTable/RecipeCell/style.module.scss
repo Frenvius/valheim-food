@@ -1,36 +1,67 @@
 .foodTable {
-  .foodTableHead {
-    padding: 5px 0;
+	.foodTableHead {
+		padding: 5px 0;
 
-    &--recipe {
-      text-align: center;
-    }
-  }
+		&--recipe {
+			text-align: center;
+		}
+	}
 
-  .foodTableRow {
+	.foodTableRow {
+	}
 
-  }
+	.foodTableCell {
+		padding: 0;
 
-  .foodTableCell {
-    padding: 0;
-
-    &--image, &--food, &--stamina, &--burn {
-      text-align: center;
-    }
-  }
+		&--image,
+		&--food,
+		&--stamina,
+		&--burn {
+			text-align: center;
+		}
+	}
 }
 
 .recipe_cell {
-  width: 375px;
-  text-align: left;
-  margin-left: 5px;
+	min-width: 270px;
+	text-align: left;
+	margin-left: 5px;
 
-  div {
-    width: 25%;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    vertical-align: middle;
-  }
+	&_item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 62px;
+		border-radius: 8px;
+		background-color: #e9e5dc;
+
+		span {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #495366;
+			width: 25px;
+			height: 40px;
+			text-align: center;
+			font-weight: bold;
+			border-radius: 8px 0 0 8px;
+		}
+
+		img {
+			width: 40px;
+			padding: 3px;
+			border-radius: 8px 8px 8px 0;
+			background-image: url('/img/card-bg.png');
+			background-size: cover;
+		}
+	}
+
+	div {
+		width: 25%;
+		display: inline-block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		vertical-align: middle;
+	}
 }

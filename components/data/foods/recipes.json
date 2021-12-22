@@ -1,4387 +1,3348 @@
 [
-  {
-    "name":"Recipe_Adze",
-    "m_amount":1,
-    "m_enabled":false,
-    "m_minStationLevel":1,
-    "m_craftingStation":null,
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":3,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Stone",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorBronzeChest",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":3,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorBronzeLegs",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":3,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorIronChest",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":20,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorIronLegs",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":20,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorLeatherChest",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":6,
-        "m_amountPerLevel":6,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":0,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BoneFragments",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorLeatherLegs",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":6,
-        "m_amountPerLevel":6,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":0,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BoneFragments",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorPaddedCuirass",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":3,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LinenThread",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorPaddedGreaves",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":3,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LinenThread",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorRagsChest",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorRagsLegs",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorTrollLeatherChest",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"TrollHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorTrollLeatherLegs",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"TrollHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorWolfChest",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":20,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"WolfPelt",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Chain",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArmorWolfLegs",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":20,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"WolfPelt",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"WolfFang",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArrowBronze",
-    "m_amount":20,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":8,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Feathers",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArrowFire",
-    "m_amount":20,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":8,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Resin",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Feathers",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArrowFlint",
-    "m_amount":20,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":8,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Flint",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Feathers",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArrowFrost",
-    "m_amount":20,
-    "m_enabled":true,
-    "m_minStationLevel":4,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":8,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Obsidian",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Feathers",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FreezeGland",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArrowIron",
-    "m_amount":20,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":8,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Feathers",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArrowNeedle",
-    "m_amount":20,
-    "m_enabled":true,
-    "m_minStationLevel":4,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Needle",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Feathers",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArrowObsidian",
-    "m_amount":20,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":8,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Obsidian",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Feathers",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArrowPoison",
-    "m_amount":20,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":8,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Obsidian",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Feathers",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Ooze",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArrowSilver",
-    "m_amount":20,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":8,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Feathers",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ArrowWood",
-    "m_amount":20,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":8,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_AtgeirBlackmetal",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":4,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":30,
-        "m_amountPerLevel":15,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BlackMetal",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LinenThread",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_AtgeirBronze",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_AtgeirIron",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":30,
-        "m_amountPerLevel":15,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_AxeBlackMetal",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":4,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":6,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BlackMetal",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LinenThread",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_AxeBronze",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":4,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_AxeFlint",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":4,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":6,
-        "m_amountPerLevel":3,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Flint",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":0,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_AxeIron",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":4,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_AxeStone",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":null,
-    "m_repairStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Stone",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_BarleyWineBase",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Barley",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Cloudberry",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Battleaxe",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":30,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"ElderBark",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":35,
-        "m_amountPerLevel":15,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_BloodPudding",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Thistle",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bloodbag",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BarleyFlour",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_BombOoze",
-    "m_amount":5,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Ooze",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":3,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Resin",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Bow",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":0,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_BowDraugrFang",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"ElderBark",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Guck",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_BowFineWood",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"RoundLog",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_BowHuntsman",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Feathers",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Bread",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BarleyFlour",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Bronze",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Copper",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Tin",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Bronze5",
-    "m_amount":5,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Copper",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Tin",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_BronzeNails",
-    "m_amount":20,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_CapeDeerHide",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":4,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BoneFragments",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_CapeLinen",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":20,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LinenThread",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_CapeLox",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":6,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LoxPelt",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_CapeOdin",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Coal",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_CapeTrollHide",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"TrollHide",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BoneFragments",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_CapeWolf",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":6,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"WolfPelt",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"TrophyWolf",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_CarrotSoup",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Mushroom",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":3,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Carrot",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Chisel",
-    "m_amount":1,
-    "m_enabled":false,
-    "m_minStationLevel":1,
-    "m_craftingStation":null,
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":3,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Club",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":null,
-    "m_repairStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_resources":[
-      {
-        "m_amount":6,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":0,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BoneFragments",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Cultivator",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"RoundLog",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_FishWraps",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FishCooked",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BarleyFlour",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Hammer",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":null,
-    "m_repairStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_resources":[
-      {
-        "m_amount":3,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Stone",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_HelmetBronze",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":3,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_HelmetDrake",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":20,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"WolfPelt",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"TrophyHatchling",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_HelmetIron",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":20,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_HelmetLeather",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":6,
-        "m_amountPerLevel":6,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":0,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BoneFragments",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_HelmetOdin",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Coal",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_HelmetPadded",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":15,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LinenThread",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_HelmetTrollLeather",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"TrollHide",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":3,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BoneFragments",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Hoe",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Stone",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_IronNails",
-    "m_amount":10,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_KnifeBlackmetal",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":4,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":4,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BlackMetal",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LinenThread",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_KnifeChitin",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":4,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Chitin",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_KnifeCopper",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Copper",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":0,
-        "m_amountPerLevel":8,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"GreydwarfEye",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_KnifeFlint",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Flint",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_LoxPie",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Cloudberry",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"CookedLoxMeat",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BarleyFlour",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_MaceBronze",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":4,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":3,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_MaceIron",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":4,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":3,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_MaceNeedle",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":4,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Needle",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LinenThread",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_MaceSilver",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"ElderBark",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":30,
-        "m_amountPerLevel":15,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"YmirRemains",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FreezeGland",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_MeadBaseFrostResist",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Honey",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Thistle",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bloodbag",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"GreydwarfEye",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_MeadBaseHealthMedium",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Honey",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bloodbag",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Raspberry",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Dandelion",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_MeadBaseHealthMinor",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Honey",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Blueberries",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Raspberry",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Dandelion",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_MeadBasePoisonResist",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Honey",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Thistle",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"NeckTail",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Coal",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_MeadBaseStaminaMedium",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Honey",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Cloudberry",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"MushroomYellow",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_MeadBaseStaminaMinor",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Honey",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Raspberry",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"MushroomYellow",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_MeadBaseTasty",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Honey",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Raspberry",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Blueberries",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_PickaxeAntler",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"HardAntler",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_PickaxeBronze",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":3,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"RoundLog",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_PickaxeIron",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":3,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"RoundLog",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_PickaxeStone",
-    "m_amount":1,
-    "m_enabled":false,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":3,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Stone",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_PotionHealthMinor",
-    "m_amount":1,
-    "m_enabled":false,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Mushroom",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Blueberries",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Dandelion",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_PotionStaminaMinor",
-    "m_amount":1,
-    "m_enabled":false,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"MushroomYellow",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Raspberry",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Honey",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_QueensJam",
-    "m_amount":4,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":8,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Raspberry",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Blueberries",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Sausages",
-    "m_amount":4,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Entrails",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"RawMeat",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Thistle",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SerpentStew",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Mushroom",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"SerpentMeatCooked",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Honey",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SharpeningStone",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_stonecutter",
-      "m_name":"$piece_stonecutter",
-      "m_name_EN":"Stonecutter"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Stone",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ShieldBanded",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ShieldBlackmetal",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BlackMetal",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Chain",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ShieldBlackmetalTower",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":15,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BlackMetal",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":7,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Chain",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ShieldBronzeBuckler",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ShieldIronSquare",
-    "m_amount":1,
-    "m_enabled":false,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":6,
-        "m_amountPerLevel":3,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ShieldIronTower",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":15,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ShieldSerpentscale",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"SerpentScale",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ShieldSilver",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ShieldWood",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Resin",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_ShieldWoodTower",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":6,
-        "m_amountPerLevel":3,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SledgeIron",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"ElderBark",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":30,
-        "m_amountPerLevel":15,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"YmirRemains",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"TrophyDraugrElite",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SledgeStagbreaker",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":20,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"RoundLog",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"TrophyDeer",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":0,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BoneFragments",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SpearBronze",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":3,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":6,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"DeerHide",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SpearChitin",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":8,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":30,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Chitin",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":3,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SpearElderbark",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"TrollHide",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"ElderBark",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SpearFlint",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":3,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Flint",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SpearWolfFang",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":10,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"ElderBark",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":4,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"WolfFang",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SwordBlackmetal",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":4,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"BlackMetal",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":5,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LinenThread",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SwordBronze",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":8,
-        "m_amountPerLevel":4,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Bronze",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SwordFire",
-    "m_amount":1,
-    "m_enabled":false,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":0,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Flametal",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"SurtlingCore",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":3,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SwordIron",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":2,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":20,
-        "m_amountPerLevel":10,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":3,
-        "m_amountPerLevel":2,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_SwordSilver",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":3,
-    "m_craftingStation":{
-      "name":"forge",
-      "m_name":"$piece_forge",
-      "m_name_EN":"Forge"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":40,
-        "m_amountPerLevel":20,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Silver",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":3,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"LeatherScraps",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":5,
-        "m_amountPerLevel":3,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Iron",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Tankard",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":5,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Resin",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_TankardOdin",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_workbench",
-      "m_name":"$piece_workbench",
-      "m_name_EN":"Workbench"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":4,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"FineWood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"TrophyDeer",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":2,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Resin",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_Torch",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":null,
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Wood",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Resin",
-          "m_itemData":null
-        }
-      }
-    ]
-  },
-  {
-    "name":"Recipe_TurnipStew",
-    "m_amount":1,
-    "m_enabled":true,
-    "m_minStationLevel":1,
-    "m_craftingStation":{
-      "name":"piece_cauldron",
-      "m_name":"$piece_cauldron",
-      "m_name_EN":"Cauldron"
-    },
-    "m_repairStation":null,
-    "m_resources":[
-      {
-        "m_amount":1,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"RawMeat",
-          "m_itemData":null
-        }
-      },
-      {
-        "m_amount":3,
-        "m_amountPerLevel":1,
-        "m_recover":true,
-        "m_resItem":{
-          "name":"Turnip",
-          "m_itemData":null
-        }
-      }
-    ]
-  }
+	{
+		"raw_name": null,
+		"var_name": null,
+		"true_name": "Recipe_Adze",
+		"enabled": false,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": null,
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 3, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Stone", "var_name": "$item_stone" }
+		]
+	},
+	{
+		"raw_name": "Bronze plate cuirass",
+		"var_name": "$item_chest_bronze",
+		"true_name": "Recipe_ArmorBronzeChest",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 5, "amount_per_level": 3, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" },
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Bronze plate leggings",
+		"var_name": "$item_legs_bronze",
+		"true_name": "Recipe_ArmorBronzeLegs",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 5, "amount_per_level": 3, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" },
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Iron scale mail",
+		"var_name": "$item_chest_iron",
+		"true_name": "Recipe_ArmorIronChest",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 20, "amount_per_level": 5, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Iron greaves",
+		"var_name": "$item_legs_iron",
+		"true_name": "Recipe_ArmorIronLegs",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 20, "amount_per_level": 5, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Leather tunic",
+		"var_name": "$item_chest_leather",
+		"true_name": "Recipe_ArmorLeatherChest",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 6,
+				"amount_per_level": 6,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			},
+			{
+				"amount": 0,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Bone fragments",
+				"var_name": "$item_bonefragments"
+			}
+		]
+	},
+	{
+		"raw_name": "Leather pants",
+		"var_name": "$item_legs_leather",
+		"true_name": "Recipe_ArmorLeatherLegs",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 6,
+				"amount_per_level": 6,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			},
+			{
+				"amount": 0,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Bone fragments",
+				"var_name": "$item_bonefragments"
+			}
+		]
+	},
+	{
+		"raw_name": "Padded cuirass",
+		"var_name": "$item_chest_pcuirass",
+		"true_name": "Recipe_ArmorPaddedCuirass",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 3, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 20,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Linen thread",
+				"var_name": "$item_linenthread"
+			}
+		]
+	},
+	{
+		"raw_name": "Padded greaves",
+		"var_name": "$item_legs_pgreaves",
+		"true_name": "Recipe_ArmorPaddedGreaves",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 3, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 20,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Linen thread",
+				"var_name": "$item_linenthread"
+			}
+		]
+	},
+	{
+		"raw_name": "Rag tunic",
+		"var_name": "$item_chest_rags",
+		"true_name": "Recipe_ArmorRagsChest",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 5,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Rag pants",
+		"var_name": "$item_legs_rags",
+		"true_name": "Recipe_ArmorRagsLegs",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 5,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Troll leather tunic",
+		"var_name": "$item_chest_trollleather",
+		"true_name": "Recipe_ArmorTrollLeatherChest",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 5,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Troll hide",
+				"var_name": "$item_trollhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Troll leather pants",
+		"var_name": "$item_legs_trollleather",
+		"true_name": "Recipe_ArmorTrollLeatherLegs",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 5,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Troll hide",
+				"var_name": "$item_trollhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Wolf armor chest",
+		"var_name": "$item_chest_wolf",
+		"true_name": "Recipe_ArmorWolfChest",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 20, "amount_per_level": 5, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" },
+			{
+				"amount": 5,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Wolf pelt",
+				"var_name": "$item_wolfpelt"
+			},
+			{ "amount": 1, "amount_per_level": 0, "recover": true, "raw_name": "Chain", "var_name": "$item_chain" }
+		]
+	},
+	{
+		"raw_name": "Wolf armor legs",
+		"var_name": "$item_legs_wolf",
+		"true_name": "Recipe_ArmorWolfLegs",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 20, "amount_per_level": 5, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" },
+			{
+				"amount": 5,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Wolf pelt",
+				"var_name": "$item_wolfpelt"
+			},
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Wolf fang",
+				"var_name": "$item_wolffang"
+			}
+		]
+	},
+	{
+		"raw_name": "Bronzehead arrow",
+		"var_name": "$item_arrow_bronze",
+		"true_name": "Recipe_ArrowBronze",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 20,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 8, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Feathers",
+				"var_name": "$item_feathers"
+			}
+		]
+	},
+	{
+		"raw_name": "Fire arrow",
+		"var_name": "$item_arrow_fire",
+		"true_name": "Recipe_ArrowFire",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 20,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 8, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 8, "amount_per_level": 1, "recover": true, "raw_name": "Resin", "var_name": "$item_resin" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Feathers",
+				"var_name": "$item_feathers"
+			}
+		]
+	},
+	{
+		"raw_name": "Flinthead arrow",
+		"var_name": "$item_arrow_flint",
+		"true_name": "Recipe_ArrowFlint",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 20,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 8, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Flint", "var_name": "$item_flint" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Feathers",
+				"var_name": "$item_feathers"
+			}
+		]
+	},
+	{
+		"raw_name": "Frost arrow",
+		"var_name": "$item_arrow_frost",
+		"true_name": "Recipe_ArrowFrost",
+		"enabled": true,
+		"min_station_level": 4,
+		"amount": 20,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 8, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Obsidian",
+				"var_name": "$item_obsidian"
+			},
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Feathers",
+				"var_name": "$item_feathers"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Freeze gland",
+				"var_name": "$item_freezegland"
+			}
+		]
+	},
+	{
+		"raw_name": "Ironhead arrow",
+		"var_name": "$item_arrow_iron",
+		"true_name": "Recipe_ArrowIron",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 20,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 8, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Feathers",
+				"var_name": "$item_feathers"
+			}
+		]
+	},
+	{
+		"raw_name": "Needle arrow",
+		"var_name": "$item_arrow_needle",
+		"true_name": "Recipe_ArrowNeedle",
+		"enabled": true,
+		"min_station_level": 4,
+		"amount": 20,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 4, "amount_per_level": 1, "recover": true, "raw_name": "Needle", "var_name": "$item_needle" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Feathers",
+				"var_name": "$item_feathers"
+			}
+		]
+	},
+	{
+		"raw_name": "Obsidian arrow",
+		"var_name": "$item_arrow_obsidian",
+		"true_name": "Recipe_ArrowObsidian",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 20,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 8, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Obsidian",
+				"var_name": "$item_obsidian"
+			},
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Feathers",
+				"var_name": "$item_feathers"
+			}
+		]
+	},
+	{
+		"raw_name": "Poison arrow",
+		"var_name": "$item_arrow_poison",
+		"true_name": "Recipe_ArrowPoison",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 20,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 8, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Obsidian",
+				"var_name": "$item_obsidian"
+			},
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Feathers",
+				"var_name": "$item_feathers"
+			},
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Ooze", "var_name": "$item_ooze" }
+		]
+	},
+	{
+		"raw_name": "Silver arrow",
+		"var_name": "$item_arrow_silver",
+		"true_name": "Recipe_ArrowSilver",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 20,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 8, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Feathers",
+				"var_name": "$item_feathers"
+			}
+		]
+	},
+	{
+		"raw_name": "Wood arrow",
+		"var_name": "$item_arrow_wood",
+		"true_name": "Recipe_ArrowWood",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 20,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 8, "amount_per_level": 2, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" }
+		]
+	},
+	{
+		"raw_name": "Blackmetal atgeir",
+		"var_name": "$item_atgeir_blackmetal",
+		"true_name": "Recipe_AtgeirBlackmetal",
+		"enabled": true,
+		"min_station_level": 4,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{
+				"amount": 30,
+				"amount_per_level": 15,
+				"recover": true,
+				"raw_name": "Black metal",
+				"var_name": "$item_blackmetal"
+			},
+			{
+				"amount": 5,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Linen thread",
+				"var_name": "$item_linenthread"
+			}
+		]
+	},
+	{
+		"raw_name": "Bronze atgeir",
+		"var_name": "$item_atgeir_bronze",
+		"true_name": "Recipe_AtgeirBronze",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 8, "amount_per_level": 4, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" },
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Iron atgeir",
+		"var_name": "$item_atgeir_iron",
+		"true_name": "Recipe_AtgeirIron",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 30, "amount_per_level": 15, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Blackmetal axe",
+		"var_name": "$item_axe_blackmetal",
+		"true_name": "Recipe_AxeBlackMetal",
+		"enabled": true,
+		"min_station_level": 4,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 6,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{
+				"amount": 20,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Black metal",
+				"var_name": "$item_blackmetal"
+			},
+			{
+				"amount": 5,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Linen thread",
+				"var_name": "$item_linenthread"
+			}
+		]
+	},
+	{
+		"raw_name": "Bronze axe",
+		"var_name": "$item_axe_bronze",
+		"true_name": "Recipe_AxeBronze",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 4, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 8, "amount_per_level": 4, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Flint axe",
+		"var_name": "$item_axe_flint",
+		"true_name": "Recipe_AxeFlint",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 4, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 6, "amount_per_level": 3, "recover": true, "raw_name": "Flint", "var_name": "$item_flint" },
+			{
+				"amount": 0,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Iron axe",
+		"var_name": "$item_axe_iron",
+		"true_name": "Recipe_AxeIron",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 4, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 20, "amount_per_level": 10, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Stone axe",
+		"var_name": "$item_axe_stone",
+		"true_name": "Recipe_AxeStone",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": null,
+		"raw_repair_station_name": "Workbench",
+		"var_repair_station_name": "$piece_workbench",
+		"true_repair_station_name": "piece_workbench",
+		"requirements": [
+			{ "amount": 5, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 4, "amount_per_level": 2, "recover": true, "raw_name": "Stone", "var_name": "$item_stone" }
+		]
+	},
+	{
+		"raw_name": "Barley wine base: Fire resistance",
+		"var_name": "$item_barleywinebase",
+		"true_name": "Recipe_BarleyWineBase",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 1, "recover": true, "raw_name": "Barley", "var_name": "$item_barley" },
+			{
+				"amount": 10,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Cloudberries",
+				"var_name": "$item_cloudberries"
+			}
+		]
+	},
+	{
+		"raw_name": "Battleaxe",
+		"var_name": "$item_battleaxe",
+		"true_name": "Recipe_Battleaxe",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 30,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Ancient bark",
+				"var_name": "$item_elderbark"
+			},
+			{ "amount": 35, "amount_per_level": 15, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 4,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Crystal battleaxe",
+		"var_name": "$item_battleaxe_crystal",
+		"true_name": "Recipe_Battleaxe_Crystal",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 40,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Ancient bark",
+				"var_name": "$item_elderbark"
+			},
+			{ "amount": 30, "amount_per_level": 15, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" },
+			{ "amount": 10, "amount_per_level": 0, "recover": true, "raw_name": "Crystal", "var_name": "$item_crystal" }
+		]
+	},
+	{
+		"raw_name": "Black soup",
+		"var_name": "$item_blacksoup",
+		"true_name": "Recipe_Blacksoup",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Bloodbag",
+				"var_name": "$item_bloodbag"
+			},
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" },
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Turnip", "var_name": "$item_turnip" }
+		]
+	},
+	{
+		"raw_name": "Blood pudding",
+		"var_name": "$item_bloodpudding",
+		"true_name": "Recipe_BloodPudding",
+		"enabled": true,
+		"min_station_level": 4,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Thistle", "var_name": "$item_thistle" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Bloodbag",
+				"var_name": "$item_bloodbag"
+			},
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Barleyflour",
+				"var_name": "$item_barleyflour"
+			}
+		]
+	},
+	{
+		"raw_name": "Boar jerky",
+		"var_name": "$item_boarjerky",
+		"true_name": "Recipe_BoarJerky",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 2,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Boar meat",
+				"var_name": "$item_boar_meat"
+			},
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" }
+		]
+	},
+	{
+		"raw_name": "Ooze bomb",
+		"var_name": "$item_oozebomb",
+		"true_name": "Recipe_BombOoze",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 5,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 5,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			},
+			{ "amount": 5, "amount_per_level": 2, "recover": true, "raw_name": "Ooze", "var_name": "$item_ooze" },
+			{ "amount": 3, "amount_per_level": 2, "recover": true, "raw_name": "Resin", "var_name": "$item_resin" }
+		]
+	},
+	{
+		"raw_name": "Crude bow",
+		"var_name": "$item_bow",
+		"true_name": "Recipe_Bow",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{
+				"amount": 8,
+				"amount_per_level": 4,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			},
+			{
+				"amount": 0,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Draugr fang",
+		"var_name": "$item_bow_draugrfang",
+		"true_name": "Recipe_BowDraugrFang",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Ancient bark",
+				"var_name": "$item_elderbark"
+			},
+			{ "amount": 20, "amount_per_level": 10, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" },
+			{
+				"amount": 2,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			},
+			{ "amount": 10, "amount_per_level": 2, "recover": true, "raw_name": "Guck", "var_name": "$item_guck" }
+		]
+	},
+	{
+		"raw_name": "Finewood bow",
+		"var_name": "$item_bow_finewood",
+		"true_name": "Recipe_BowFineWood",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Core wood",
+				"var_name": "$item_roundlog"
+			},
+			{
+				"amount": 2,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Huntsman bow",
+		"var_name": "$item_bow_huntsman",
+		"true_name": "Recipe_BowHuntsman",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{ "amount": 20, "amount_per_level": 10, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Feathers",
+				"var_name": "$item_feathers"
+			},
+			{
+				"amount": 2,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Bread dough",
+		"var_name": "$item_breaddough",
+		"true_name": "Recipe_Bread",
+		"enabled": true,
+		"min_station_level": 4,
+		"amount": 2,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Barleyflour",
+				"var_name": "$item_barleyflour"
+			}
+		]
+	},
+	{
+		"raw_name": "Bronze",
+		"var_name": "$item_bronze",
+		"true_name": "Recipe_Bronze",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Copper", "var_name": "$item_copper" },
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Tin", "var_name": "$item_tin" }
+		]
+	},
+	{
+		"raw_name": "Bronze",
+		"var_name": "$item_bronze",
+		"true_name": "Recipe_Bronze5",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 5,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 1, "recover": true, "raw_name": "Copper", "var_name": "$item_copper" },
+			{ "amount": 5, "amount_per_level": 1, "recover": true, "raw_name": "Tin", "var_name": "$item_tin" }
+		]
+	},
+	{
+		"raw_name": "Bronze nails",
+		"var_name": "$item_bronzenails",
+		"true_name": "Recipe_BronzeNails",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 20,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" }
+		]
+	},
+	{
+		"raw_name": "Deer hide cape",
+		"var_name": "$item_cape_deerhide",
+		"true_name": "Recipe_CapeDeerHide",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 4,
+				"amount_per_level": 4,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			},
+			{
+				"amount": 5,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Bone fragments",
+				"var_name": "$item_bonefragments"
+			}
+		]
+	},
+	{
+		"raw_name": "Linen cape",
+		"var_name": "$item_cape_linen",
+		"true_name": "Recipe_CapeLinen",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 20,
+				"amount_per_level": 4,
+				"recover": true,
+				"raw_name": "Linen thread",
+				"var_name": "$item_linenthread"
+			},
+			{ "amount": 1, "amount_per_level": 0, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" }
+		]
+	},
+	{
+		"raw_name": "Lox cape",
+		"var_name": "$item_cape_lox",
+		"true_name": "Recipe_CapeLox",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 6,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Lox pelt",
+				"var_name": "$item_loxpelt"
+			},
+			{ "amount": 2, "amount_per_level": 0, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" }
+		]
+	},
+	{
+		"raw_name": "Cape of Odin",
+		"var_name": "$item_cape_odin",
+		"true_name": "Recipe_CapeOdin",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			},
+			{ "amount": 4, "amount_per_level": 2, "recover": true, "raw_name": "Coal", "var_name": "$item_coal" }
+		]
+	},
+	{
+		"raw_name": "Troll hide cape",
+		"var_name": "$item_cape_trollhide",
+		"true_name": "Recipe_CapeTrollHide",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Troll hide",
+				"var_name": "$item_trollhide"
+			},
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Bone fragments",
+				"var_name": "$item_bonefragments"
+			}
+		]
+	},
+	{
+		"raw_name": "Wolf fur cape",
+		"var_name": "$item_cape_wolf",
+		"true_name": "Recipe_CapeWolf",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 6,
+				"amount_per_level": 4,
+				"recover": true,
+				"raw_name": "Wolf pelt",
+				"var_name": "$item_wolfpelt"
+			},
+			{ "amount": 4, "amount_per_level": 2, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" },
+			{
+				"amount": 1,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Wolf trophy",
+				"var_name": "$item_trophy_wolf"
+			}
+		]
+	},
+	{
+		"raw_name": "Carrot soup",
+		"var_name": "$item_carrotsoup",
+		"true_name": "Recipe_CarrotSoup",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Mushroom",
+				"var_name": "$item_mushroomcommon"
+			},
+			{ "amount": 3, "amount_per_level": 1, "recover": true, "raw_name": "Carrot", "var_name": "$item_carrot" }
+		]
+	},
+	{
+		"raw_name": null,
+		"var_name": null,
+		"true_name": "Recipe_Chisel",
+		"enabled": false,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": null,
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 3, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" }
+		]
+	},
+	{
+		"raw_name": "Club",
+		"var_name": "$item_club",
+		"true_name": "Recipe_Club",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": null,
+		"raw_repair_station_name": "Workbench",
+		"var_repair_station_name": "$piece_workbench",
+		"true_repair_station_name": "piece_workbench",
+		"requirements": [
+			{ "amount": 6, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{
+				"amount": 0,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Bone fragments",
+				"var_name": "$item_bonefragments"
+			}
+		]
+	},
+	{
+		"raw_name": "Cultivator",
+		"var_name": "$item_cultivator",
+		"true_name": "Recipe_Cultivator",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 5,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Core wood",
+				"var_name": "$item_roundlog"
+			},
+			{ "amount": 5, "amount_per_level": 1, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" }
+		]
+	},
+	{
+		"raw_name": "Deer stew",
+		"var_name": "$item_deerstew",
+		"true_name": "Recipe_DeerStew",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Cooked deer meat",
+				"var_name": "$item_deer_meat_cooked"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Blueberries",
+				"var_name": "$item_blueberries"
+			},
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Carrot", "var_name": "$item_carrot" }
+		]
+	},
+	{
+		"raw_name": "Eyescream",
+		"var_name": "$item_eyescream",
+		"true_name": "Recipe_Eyescream",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 3,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Greydwarf eye",
+				"var_name": "$item_greydwarfeye"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Freeze gland",
+				"var_name": "$item_freezegland"
+			}
+		]
+	},
+	{
+		"raw_name": "Fish wraps",
+		"var_name": "$item_fishwraps",
+		"true_name": "Recipe_FishWraps",
+		"enabled": true,
+		"min_station_level": 4,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Cooked fish",
+				"var_name": "$item_fish_cooked"
+			},
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Barleyflour",
+				"var_name": "$item_barleyflour"
+			}
+		]
+	},
+	{
+		"raw_name": "Hammer",
+		"var_name": "$item_hammer",
+		"true_name": "Recipe_Hammer",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": null,
+		"raw_repair_station_name": "Workbench",
+		"var_repair_station_name": "$piece_workbench",
+		"true_repair_station_name": "piece_workbench",
+		"requirements": [
+			{ "amount": 3, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Stone", "var_name": "$item_stone" }
+		]
+	},
+	{
+		"raw_name": "Bronze helmet",
+		"var_name": "$item_helmet_bronze",
+		"true_name": "Recipe_HelmetBronze",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 5, "amount_per_level": 3, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" },
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Drake helmet",
+		"var_name": "$item_helmet_drake",
+		"true_name": "Recipe_HelmetDrake",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 20, "amount_per_level": 5, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" },
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Wolf pelt",
+				"var_name": "$item_wolfpelt"
+			},
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Drake trophy",
+				"var_name": "$item_trophy_hatchling"
+			}
+		]
+	},
+	{
+		"raw_name": "Iron helmet",
+		"var_name": "$item_helmet_iron",
+		"true_name": "Recipe_HelmetIron",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 20, "amount_per_level": 5, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Leather helmet",
+		"var_name": "$item_helmet_leather",
+		"true_name": "Recipe_HelmetLeather",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 6,
+				"amount_per_level": 6,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			},
+			{
+				"amount": 0,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Bone fragments",
+				"var_name": "$item_bonefragments"
+			}
+		]
+	},
+	{
+		"raw_name": "Hood of Odin",
+		"var_name": "$item_helmet_odin",
+		"true_name": "Recipe_HelmetOdin",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			},
+			{ "amount": 4, "amount_per_level": 2, "recover": true, "raw_name": "Coal", "var_name": "$item_coal" }
+		]
+	},
+	{
+		"raw_name": "Padded helmet",
+		"var_name": "$item_helmet_padded",
+		"true_name": "Recipe_HelmetPadded",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 15,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Linen thread",
+				"var_name": "$item_linenthread"
+			}
+		]
+	},
+	{
+		"raw_name": "Troll leather helmet",
+		"var_name": "$item_helmet_trollleather",
+		"true_name": "Recipe_HelmetTrollLeather",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 5,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Troll hide",
+				"var_name": "$item_trollhide"
+			},
+			{
+				"amount": 3,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Bone fragments",
+				"var_name": "$item_bonefragments"
+			}
+		]
+	},
+	{
+		"raw_name": "Hoe",
+		"var_name": "$item_hoe",
+		"true_name": "Recipe_Hoe",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 5, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Stone", "var_name": "$item_stone" }
+		]
+	},
+	{
+		"raw_name": "Iron nails",
+		"var_name": "$item_ironnails",
+		"true_name": "Recipe_IronNails",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 10,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" }
+		]
+	},
+	{
+		"raw_name": "Blackmetal knife",
+		"var_name": "$item_knife_blackmetal",
+		"true_name": "Recipe_KnifeBlackmetal",
+		"enabled": true,
+		"min_station_level": 4,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 4,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{
+				"amount": 10,
+				"amount_per_level": 4,
+				"recover": true,
+				"raw_name": "Black metal",
+				"var_name": "$item_blackmetal"
+			},
+			{
+				"amount": 5,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Linen thread",
+				"var_name": "$item_linenthread"
+			}
+		]
+	},
+	{
+		"raw_name": "Butcher knife",
+		"var_name": "$item_knife_butcher",
+		"true_name": "Recipe_KnifeButcher",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 2, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 4, "amount_per_level": 0, "recover": true, "raw_name": "Tin", "var_name": "$item_tin" }
+		]
+	},
+	{
+		"raw_name": "Abyssal razor",
+		"var_name": "$item_knife_chitin",
+		"true_name": "Recipe_KnifeChitin",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 4,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{ "amount": 20, "amount_per_level": 10, "recover": true, "raw_name": "Chitin", "var_name": "$item_chitin" },
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Copper knife",
+		"var_name": "$item_knife_copper",
+		"true_name": "Recipe_KnifeCopper",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 2, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 8, "amount_per_level": 4, "recover": true, "raw_name": "Copper", "var_name": "$item_copper" },
+			{
+				"amount": 0,
+				"amount_per_level": 8,
+				"recover": true,
+				"raw_name": "Greydwarf eye",
+				"var_name": "$item_greydwarfeye"
+			}
+		]
+	},
+	{
+		"raw_name": "Flint knife",
+		"var_name": "$item_knife_flint",
+		"true_name": "Recipe_KnifeFlint",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 2, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 4, "amount_per_level": 2, "recover": true, "raw_name": "Flint", "var_name": "$item_flint" },
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Silver knife",
+		"var_name": "$item_knife_silver",
+		"true_name": "Recipe_KnifeSilver",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" },
+			{
+				"amount": 3,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			},
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" }
+		]
+	},
+	{
+		"raw_name": "Unbaked lox pie",
+		"var_name": "$item_loxpie_uncooked",
+		"true_name": "Recipe_LoxPie",
+		"enabled": true,
+		"min_station_level": 4,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Cloudberries",
+				"var_name": "$item_cloudberries"
+			},
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Lox meat",
+				"var_name": "$item_loxmeat"
+			},
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Barleyflour",
+				"var_name": "$item_barleyflour"
+			}
+		]
+	},
+	{
+		"raw_name": "Bronze mace",
+		"var_name": "$item_mace_bronze",
+		"true_name": "Recipe_MaceBronze",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 4, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 8, "amount_per_level": 4, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" },
+			{
+				"amount": 3,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Iron mace",
+		"var_name": "$item_mace_iron",
+		"true_name": "Recipe_MaceIron",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 4, "amount_per_level": 0, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 20, "amount_per_level": 10, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 3,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Porcupine",
+		"var_name": "$item_mace_needle",
+		"true_name": "Recipe_MaceNeedle",
+		"enabled": true,
+		"min_station_level": 4,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 5,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{ "amount": 20, "amount_per_level": 2, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{ "amount": 5, "amount_per_level": 2, "recover": true, "raw_name": "Needle", "var_name": "$item_needle" },
+			{
+				"amount": 10,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Linen thread",
+				"var_name": "$item_linenthread"
+			}
+		]
+	},
+	{
+		"raw_name": "Frostner",
+		"var_name": "$item_mace_silver",
+		"true_name": "Recipe_MaceSilver",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Ancient bark",
+				"var_name": "$item_elderbark"
+			},
+			{ "amount": 30, "amount_per_level": 15, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" },
+			{
+				"amount": 5,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Ymir flesh",
+				"var_name": "$item_ymirremains"
+			},
+			{
+				"amount": 5,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Freeze gland",
+				"var_name": "$item_freezegland"
+			}
+		]
+	},
+	{
+		"raw_name": "Mead base: Frost resistance",
+		"var_name": "$item_meadbasefrostresist",
+		"true_name": "Recipe_MeadBaseFrostResist",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" },
+			{ "amount": 5, "amount_per_level": 1, "recover": true, "raw_name": "Thistle", "var_name": "$item_thistle" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Bloodbag",
+				"var_name": "$item_bloodbag"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Greydwarf eye",
+				"var_name": "$item_greydwarfeye"
+			}
+		]
+	},
+	{
+		"raw_name": "Mead base: Medium healing",
+		"var_name": "$item_meadbasehealth_medium",
+		"true_name": "Recipe_MeadBaseHealthMedium",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" },
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Bloodbag",
+				"var_name": "$item_bloodbag"
+			},
+			{
+				"amount": 10,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Raspberries",
+				"var_name": "$item_raspberries"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Dandelion",
+				"var_name": "$item_dandelion"
+			}
+		]
+	},
+	{
+		"raw_name": "Mead base: Minor healing",
+		"var_name": "$item_meadbasehealth",
+		"true_name": "Recipe_MeadBaseHealthMinor",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" },
+			{
+				"amount": 5,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Blueberries",
+				"var_name": "$item_blueberries"
+			},
+			{
+				"amount": 10,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Raspberries",
+				"var_name": "$item_raspberries"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Dandelion",
+				"var_name": "$item_dandelion"
+			}
+		]
+	},
+	{
+		"raw_name": "Mead base: Poison resistance",
+		"var_name": "$item_meadbasepoisonresist",
+		"true_name": "Recipe_MeadBasePoisonResist",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" },
+			{ "amount": 5, "amount_per_level": 1, "recover": true, "raw_name": "Thistle", "var_name": "$item_thistle" },
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Neck tail",
+				"var_name": "$item_necktail"
+			},
+			{ "amount": 10, "amount_per_level": 1, "recover": true, "raw_name": "Coal", "var_name": "$item_coal" }
+		]
+	},
+	{
+		"raw_name": "Mead base: Medium stamina",
+		"var_name": "$item_meadbasestamina_medium",
+		"true_name": "Recipe_MeadBaseStaminaMedium",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" },
+			{
+				"amount": 10,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Cloudberries",
+				"var_name": "$item_cloudberries"
+			},
+			{
+				"amount": 10,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Yellow mushroom",
+				"var_name": "$item_mushroomyellow"
+			}
+		]
+	},
+	{
+		"raw_name": "Mead base: Minor stamina",
+		"var_name": "$item_meadbasestamina",
+		"true_name": "Recipe_MeadBaseStaminaMinor",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" },
+			{
+				"amount": 10,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Raspberries",
+				"var_name": "$item_raspberries"
+			},
+			{
+				"amount": 10,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Yellow mushroom",
+				"var_name": "$item_mushroomyellow"
+			}
+		]
+	},
+	{
+		"raw_name": "Mead base: Tasty",
+		"var_name": "$item_meadbasetasty",
+		"true_name": "Recipe_MeadBaseTasty",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" },
+			{
+				"amount": 10,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Raspberries",
+				"var_name": "$item_raspberries"
+			},
+			{
+				"amount": 5,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Blueberries",
+				"var_name": "$item_blueberries"
+			}
+		]
+	},
+	{
+		"raw_name": "Minced Meat Sauce",
+		"var_name": "$item_mincemeatsauce",
+		"true_name": "Recipe_MinceMeatSauce",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Boar meat",
+				"var_name": "$item_boar_meat"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Neck tail",
+				"var_name": "$item_necktail"
+			},
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Carrot", "var_name": "$item_carrot" }
+		]
+	},
+	{
+		"raw_name": "Onion soup",
+		"var_name": "$item_onionsoup",
+		"true_name": "Recipe_Onionsoup",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 3, "amount_per_level": 1, "recover": true, "raw_name": "Onion", "var_name": "$item_onion" }
+		]
+	},
+	{
+		"raw_name": "Antler pickaxe",
+		"var_name": "$item_pickaxe_antler",
+		"true_name": "Recipe_PickaxeAntler",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 4, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Hard antler",
+				"var_name": "$item_hardantler"
+			}
+		]
+	},
+	{
+		"raw_name": "Bronze pickaxe",
+		"var_name": "$item_pickaxe_bronze",
+		"true_name": "Recipe_PickaxeBronze",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 3,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Core wood",
+				"var_name": "$item_roundlog"
+			},
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" }
+		]
+	},
+	{
+		"raw_name": "Iron pickaxe",
+		"var_name": "$item_pickaxe_iron",
+		"true_name": "Recipe_PickaxeIron",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 3,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Core wood",
+				"var_name": "$item_roundlog"
+			},
+			{ "amount": 20, "amount_per_level": 10, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" }
+		]
+	},
+	{
+		"raw_name": "Stone pickaxe",
+		"var_name": "$item_pickaxe_stone",
+		"true_name": "Recipe_PickaxeStone",
+		"enabled": false,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 3, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Stone", "var_name": "$item_stone" }
+		]
+	},
+	{
+		"raw_name": "Minor healing mead",
+		"var_name": "$item_mead_hp_minor",
+		"true_name": "Recipe_PotionHealthMinor",
+		"enabled": false,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Mushroom",
+				"var_name": "$item_mushroomcommon"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Blueberries",
+				"var_name": "$item_blueberries"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Dandelion",
+				"var_name": "$item_dandelion"
+			}
+		]
+	},
+	{
+		"raw_name": "Minor stamina mead",
+		"var_name": "$item_mead_stamina_minor",
+		"true_name": "Recipe_PotionStaminaMinor",
+		"enabled": false,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Yellow mushroom",
+				"var_name": "$item_mushroomyellow"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Raspberries",
+				"var_name": "$item_raspberries"
+			},
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" }
+		]
+	},
+	{
+		"raw_name": "Queens jam",
+		"var_name": "$item_queensjam",
+		"true_name": "Recipe_QueensJam",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 4,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 8,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Raspberries",
+				"var_name": "$item_raspberries"
+			},
+			{
+				"amount": 6,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Blueberries",
+				"var_name": "$item_blueberries"
+			}
+		]
+	},
+	{
+		"raw_name": "Lox saddle",
+		"var_name": "$item_saddlelox",
+		"true_name": "Recipe_SadleLox",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			},
+			{
+				"amount": 20,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Linen thread",
+				"var_name": "$item_linenthread"
+			},
+			{
+				"amount": 15,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Black metal",
+				"var_name": "$item_blackmetal"
+			}
+		]
+	},
+	{
+		"raw_name": "Sausages",
+		"var_name": "$item_sausages",
+		"true_name": "Recipe_Sausages",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 4,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Entrails",
+				"var_name": "$item_entrails"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Boar meat",
+				"var_name": "$item_boar_meat"
+			},
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Thistle", "var_name": "$item_thistle" }
+		]
+	},
+	{
+		"raw_name": "Serpent stew",
+		"var_name": "$item_serpentstew",
+		"true_name": "Recipe_SerpentStew",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Mushroom",
+				"var_name": "$item_mushroomcommon"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Cooked serpent meat",
+				"var_name": "$item_serpentmeatcooked"
+			},
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" }
+		]
+	},
+	{
+		"raw_name": "Sharpening stone",
+		"var_name": "$item_sharpeningstone",
+		"true_name": "Recipe_SharpeningStone",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Stonecutter",
+		"var_crafting_station_name": "$piece_stonecutter",
+		"true_crafting_station_name": "piece_stonecutter",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 5, "amount_per_level": 1, "recover": true, "raw_name": "Stone", "var_name": "$item_stone" }
+		]
+	},
+	{
+		"raw_name": "Banded shield",
+		"var_name": "$item_shield_banded",
+		"true_name": "Recipe_ShieldBanded",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{ "amount": 8, "amount_per_level": 4, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" }
+		]
+	},
+	{
+		"raw_name": "Black metal shield",
+		"var_name": "$item_shield_blackmetal",
+		"true_name": "Recipe_ShieldBlackmetal",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{
+				"amount": 8,
+				"amount_per_level": 4,
+				"recover": true,
+				"raw_name": "Black metal",
+				"var_name": "$item_blackmetal"
+			},
+			{ "amount": 5, "amount_per_level": 2, "recover": true, "raw_name": "Chain", "var_name": "$item_chain" }
+		]
+	},
+	{
+		"raw_name": "Black metal tower shield",
+		"var_name": "$item_shield_blackmetal_tower",
+		"true_name": "Recipe_ShieldBlackmetalTower",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 15,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{
+				"amount": 10,
+				"amount_per_level": 4,
+				"recover": true,
+				"raw_name": "Black metal",
+				"var_name": "$item_blackmetal"
+			},
+			{ "amount": 7, "amount_per_level": 2, "recover": true, "raw_name": "Chain", "var_name": "$item_chain" }
+		]
+	},
+	{
+		"raw_name": "Bone tower shield",
+		"var_name": "$item_shield_bonetower",
+		"true_name": "Recipe_ShieldBoneTower",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Bone fragments",
+				"var_name": "$item_bonefragments"
+			},
+			{
+				"amount": 3,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Skeleton trophy",
+				"var_name": "$item_trophy_skeleton"
+			}
+		]
+	},
+	{
+		"raw_name": "Bronze buckler",
+		"var_name": "$item_shield_bronzebuckler",
+		"true_name": "Recipe_ShieldBronzeBuckler",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" },
+			{ "amount": 4, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" }
+		]
+	},
+	{
+		"raw_name": "Iron buckler",
+		"var_name": "$item_shield_ironbuckler",
+		"true_name": "Recipe_ShieldIronBuckler",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Ancient bark",
+				"var_name": "$item_elderbark"
+			}
+		]
+	},
+	{
+		"raw_name": "Iron shield",
+		"var_name": "$item_shield_iron_square",
+		"true_name": "Recipe_ShieldIronSquare",
+		"enabled": false,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{ "amount": 6, "amount_per_level": 3, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" }
+		]
+	},
+	{
+		"raw_name": "Iron tower shield",
+		"var_name": "$item_shield_iron_tower",
+		"true_name": "Recipe_ShieldIronTower",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 15,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" }
+		]
+	},
+	{
+		"raw_name": "Serpent scale shield",
+		"var_name": "$item_shield_serpentscale",
+		"true_name": "Recipe_ShieldSerpentscale",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{ "amount": 4, "amount_per_level": 2, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 8,
+				"amount_per_level": 4,
+				"recover": true,
+				"raw_name": "Serpent scale",
+				"var_name": "$item_serpentscale"
+			}
+		]
+	},
+	{
+		"raw_name": "Silver shield",
+		"var_name": "$item_shield_silver",
+		"true_name": "Recipe_ShieldSilver",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{ "amount": 8, "amount_per_level": 4, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" }
+		]
+	},
+	{
+		"raw_name": "Wood shield",
+		"var_name": "$item_shield_wood",
+		"true_name": "Recipe_ShieldWood",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 4, "amount_per_level": 2, "recover": true, "raw_name": "Resin", "var_name": "$item_resin" },
+			{
+				"amount": 4,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Wood tower shield",
+		"var_name": "$item_shield_woodtower",
+		"true_name": "Recipe_ShieldWoodTower",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{
+				"amount": 6,
+				"amount_per_level": 3,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Muckshake",
+		"var_name": "$item_shocklatesmoothie",
+		"true_name": "Recipe_ShocklateSmoothie",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Ooze", "var_name": "$item_ooze" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Raspberries",
+				"var_name": "$item_raspberries"
+			},
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Blueberries",
+				"var_name": "$item_blueberries"
+			}
+		]
+	},
+	{
+		"raw_name": "Iron sledge",
+		"var_name": "$item_sledge_iron",
+		"true_name": "Recipe_SledgeIron",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Ancient bark",
+				"var_name": "$item_elderbark"
+			},
+			{ "amount": 30, "amount_per_level": 15, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 4,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Ymir flesh",
+				"var_name": "$item_ymirremains"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Draugr Elite trophy",
+				"var_name": "$item_trophy_draugrelite"
+			}
+		]
+	},
+	{
+		"raw_name": "Stagbreaker",
+		"var_name": "$item_stagbreaker",
+		"true_name": "Recipe_SledgeStagbreaker",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 20,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Core wood",
+				"var_name": "$item_roundlog"
+			},
+			{
+				"amount": 5,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Deer trophy",
+				"var_name": "$item_trophy_deer"
+			},
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			},
+			{
+				"amount": 0,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Bone fragments",
+				"var_name": "$item_bonefragments"
+			}
+		]
+	},
+	{
+		"raw_name": "Bronze spear",
+		"var_name": "$item_spear_bronze",
+		"true_name": "Recipe_SpearBronze",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 5, "amount_per_level": 3, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 6, "amount_per_level": 4, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Deer hide",
+				"var_name": "$item_deerhide"
+			}
+		]
+	},
+	{
+		"raw_name": "Abyssal harpoon",
+		"var_name": "$item_spear_chitin",
+		"true_name": "Recipe_SpearChitin",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 8,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{ "amount": 30, "amount_per_level": 0, "recover": true, "raw_name": "Chitin", "var_name": "$item_chitin" },
+			{
+				"amount": 3,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Ancient bark spear",
+		"var_name": "$item_spear_ancientbark",
+		"true_name": "Recipe_SpearElderbark",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Troll hide",
+				"var_name": "$item_trollhide"
+			},
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Ancient bark",
+				"var_name": "$item_elderbark"
+			}
+		]
+	},
+	{
+		"raw_name": "Flint spear",
+		"var_name": "$item_spear_flint",
+		"true_name": "Recipe_SpearFlint",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 5, "amount_per_level": 3, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 10, "amount_per_level": 5, "recover": true, "raw_name": "Flint", "var_name": "$item_flint" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Fang spear",
+		"var_name": "$item_spear_wolffang",
+		"true_name": "Recipe_SpearWolfFang",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 10,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Ancient bark",
+				"var_name": "$item_elderbark"
+			},
+			{
+				"amount": 4,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Wolf fang",
+				"var_name": "$item_wolffang"
+			},
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			},
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" }
+		]
+	},
+	{
+		"raw_name": "Blackmetal sword",
+		"var_name": "$item_sword_blackmetal",
+		"true_name": "Recipe_SwordBlackmetal",
+		"enabled": true,
+		"min_station_level": 4,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{
+				"amount": 20,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Black metal",
+				"var_name": "$item_blackmetal"
+			},
+			{
+				"amount": 5,
+				"amount_per_level": 5,
+				"recover": true,
+				"raw_name": "Linen thread",
+				"var_name": "$item_linenthread"
+			}
+		]
+	},
+	{
+		"raw_name": "Bronze sword",
+		"var_name": "$item_sword_bronze",
+		"true_name": "Recipe_SwordBronze",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 8, "amount_per_level": 4, "recover": true, "raw_name": "Bronze", "var_name": "$item_bronze" },
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Dyrnwyn",
+		"var_name": "$item_sword_fire",
+		"true_name": "Recipe_SwordFire",
+		"enabled": false,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 2,
+				"amount_per_level": 0,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{
+				"amount": 20,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Flametal",
+				"var_name": "$item_flametal"
+			},
+			{
+				"amount": 20,
+				"amount_per_level": 10,
+				"recover": true,
+				"raw_name": "Surtling core",
+				"var_name": "$item_surtlingcore"
+			},
+			{
+				"amount": 3,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Iron sword",
+		"var_name": "$item_sword_iron",
+		"true_name": "Recipe_SwordIron",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 20, "amount_per_level": 10, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" },
+			{
+				"amount": 3,
+				"amount_per_level": 2,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			}
+		]
+	},
+	{
+		"raw_name": "Silver sword",
+		"var_name": "$item_sword_silver",
+		"true_name": "Recipe_SwordSilver",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Forge",
+		"var_crafting_station_name": "$piece_forge",
+		"true_crafting_station_name": "forge",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 40, "amount_per_level": 20, "recover": true, "raw_name": "Silver", "var_name": "$item_silver" },
+			{
+				"amount": 3,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Leather scraps",
+				"var_name": "$item_leatherscraps"
+			},
+			{ "amount": 5, "amount_per_level": 3, "recover": true, "raw_name": "Iron", "var_name": "$item_iron" }
+		]
+	},
+	{
+		"raw_name": "Tankard",
+		"var_name": "$item_tankard",
+		"true_name": "Recipe_Tankard",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 5,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Resin", "var_name": "$item_resin" }
+		]
+	},
+	{
+		"raw_name": "Mead horn of Odin",
+		"var_name": "$item_tankard_odin",
+		"true_name": "Recipe_TankardOdin",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": "Workbench",
+		"var_crafting_station_name": "$piece_workbench",
+		"true_crafting_station_name": "piece_workbench",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 4,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Fine wood",
+				"var_name": "$item_finewood"
+			},
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Deer trophy",
+				"var_name": "$item_trophy_deer"
+			},
+			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Resin", "var_name": "$item_resin" }
+		]
+	},
+	{
+		"raw_name": "Torch",
+		"var_name": "$item_torch",
+		"true_name": "Recipe_Torch",
+		"enabled": true,
+		"min_station_level": 1,
+		"amount": 1,
+		"raw_crafting_station_name": null,
+		"raw_repair_station_name": null,
+		"requirements": [
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Wood", "var_name": "$item_wood" },
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Resin", "var_name": "$item_resin" }
+		]
+	},
+	{
+		"raw_name": "Turnip stew",
+		"var_name": "$item_turnipstew",
+		"true_name": "Recipe_TurnipStew",
+		"enabled": true,
+		"min_station_level": 2,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Boar meat",
+				"var_name": "$item_boar_meat"
+			},
+			{ "amount": 3, "amount_per_level": 1, "recover": true, "raw_name": "Turnip", "var_name": "$item_turnip" }
+		]
+	},
+	{
+		"raw_name": "Wolf jerky",
+		"var_name": "$item_wolfjerky",
+		"true_name": "Recipe_WolfJerky",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 2,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Wolf meat",
+				"var_name": "$item_wolf_meat"
+			},
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" }
+		]
+	},
+	{
+		"raw_name": "Wolf skewer",
+		"var_name": "$item_wolf_skewer",
+		"true_name": "Recipe_WolfSkewer",
+		"enabled": true,
+		"min_station_level": 3,
+		"amount": 1,
+		"raw_crafting_station_name": "Cauldron",
+		"var_crafting_station_name": "$piece_cauldron",
+		"true_crafting_station_name": "piece_cauldron",
+		"raw_repair_station_name": null,
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Wolf meat",
+				"var_name": "$item_wolf_meat"
+			},
+			{
+				"amount": 2,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Mushroom",
+				"var_name": "$item_mushroomcommon"
+			},
+			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Onion", "var_name": "$item_onion" }
+		]
+	}
 ]
