@@ -4,6 +4,10 @@
 		margin-left: 0;
 		margin-right: -8px;
 	}
+
+	[class*="Pagination"] {
+		display: none;
+	}
 }
 
 .stationStyle {
