@@ -24,6 +24,8 @@ const FoodTable = () => {
 		<Tooltip {...props} classes={{ popper: className }} placement="top" arrow />
 	))(({ theme }) => ({
 		[`& .${tooltipClasses.tooltip}`]: {
+			backgroundImage: 'url("/img/card-bg.png")',
+			backgroundSize: 'cover',
 			backgroundColor: '#707070',
 			maxWidth: 220
 		}
