@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
 	return (
 		<Box sx={{ flexGrow: 1 }}>
 			<Head>
+				<title>Valharvest Foods</title>
 				<link rel="shortcut icon" href="/favicon.ico" />
 			</Head>
 			<AppBar position="static">
