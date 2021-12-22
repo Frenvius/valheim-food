@@ -35,7 +35,7 @@
     "consumeStatusEffect": null,
     "craftingStation": "rk_prep",
     "requirements": [
-      {"Item": "DragonEgg", "Amount": 1},
+      {"Item": "rk_dragonegg", "Amount": 1},
       {"Item": "salt", "Amount": 1},
       {"Item": "Thistle", "Amount": 4},
       {"Item": "Onion", "Amount": 4}

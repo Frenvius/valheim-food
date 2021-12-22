@@ -1,6 +1,7 @@
 import itemDropList from './itemdrops.json';
 import recipeList from './recipes.json';
 import valharvestList from './valharvestFoods.json';
+import boneAppetitList from './BoneAppetit.json';
 
 const getRecipeObject = (itemName) => {
     for(let i = 0; i < recipeList.length; i++) {
@@ -64,11 +65,40 @@ const parseValharvestFoods = () => {
     return foodArr;
 };
 
-const parseFoods = (valheimFoods) => {
-    const foodArr = parseValharvestFoods();
-    const foodList = [...foodArr];
+const parseBoneAppetitFoods = () => {
+    const foodArr = [];
+    const json = JSON.stringify(boneAppetitList);
+    const foodObject = JSON.parse(json);
+    for(const item in foodObject) {
+        foodArr.push({
+            image: `/img/${item}_icon.png`,
+            name: foodObject[item].name,
+            food: foodObject[item].food,
+            stamina: foodObject[item].foodStamina,
+            regen: foodObject[item].foodRegen,
+            burn: `${foodObject[item].foodBurnTime} min`,
+            station: foodObject[item].craftingStation,
+            prefab: item,
+            recipe: getValharvestRecipe(foodObject[item].requirements)
+        });
+    }
 
-    if (valheimFoods) {
+    return foodArr;
+};
+
+const parseFoods = (valharvestFood, boneAppetitFood, valheimFood) => {
+    let foodList = [];
+    if (valharvestFood) {
+        const foodArr = parseValharvestFoods();
+        foodList = [...foodArr]
+    }
+
+    if (boneAppetitFood) {
+        const foodArr = parseBoneAppetitFoods();
+        foodList = [...foodArr]
+    }
+
+    if (valheimFood) {
         for(let i = 0; i < itemDropList.length; i++) {
             const foodItem = itemDropList[i].shared_data;
             const foodName = foodItem.raw_name;
@@ -76,7 +106,7 @@ const parseFoods = (valheimFoods) => {
             if (foodItem.item_type_name === 'Consumable' && foodItem.
                 food > 0) {
                 foodList.push({
-                    image: `/img/${foodName.replace(/ /g,'_')}_icon.png`,
+                    image: `/img/${prefabName}_icon.png`,
                     name: foodName,
                     food: foodItem.food,
                     stamina: foodItem.food_stamina,

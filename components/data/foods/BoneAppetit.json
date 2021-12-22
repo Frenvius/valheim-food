@@ -1,0 +1,466 @@
+{
+  "rk_boiledegg": {
+    "name": "Boiled Egg",
+    "description": "A much smaller egg that you find in a nest, maybe you can carry this one through a portal.",
+    "weight": 0.5,
+    "maxStackSize": 20,
+    "variants": null,
+    "food": 25,
+    "foodStamina": 30,
+    "foodBurnTime": 16,
+    "foodRegen": 3,
+    "foodColor": "#D1EDED",
+    "craftingStation": "rk_prep",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "rk_egg", "Amount": 2}
+    ]
+  },
+  "rk_haggis": {
+    "name": "Haggis",
+    "description": "Haggis",
+    "weight": 0.5,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 55,
+    "foodStamina": 35,
+    "foodBurnTime": 25,
+    "foodRegen": 3,
+    "foodColor": "#5b452f",
+    "craftingStation": "rk_grill",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "DeerMeat", "Amount": 1},
+      {"Item": "Carrot", "Amount": 2},
+      {"Item": "Entrails", "Amount": 2},
+      {"Item": "Turnip", "Amount": 1}
+    ]
+  },
+  "rk_bacon": {
+    "name": "Bacon",
+    "description": "It's bacon me crazy!",
+    "weight": 0.2,
+    "maxStackSize": 20,
+    "variants": null,
+    "food": 30,
+    "foodStamina": 15,
+    "foodBurnTime": 25,
+    "foodRegen": 3,
+    "foodColor": "#632e2a",
+    "craftingStation": "rk_griddle",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "rk_pork", "Amount": 2},
+      {"Item": "DeerMeat", "Amount": 1}
+    ]
+  },
+  "rk_bloodsausage": {
+    "name": "Blood Sausage",
+    "description": "What's better than sausage? Blood Sausage!",
+    "weight": 0.5,
+    "maxStackSize": 20,
+    "variants": null,
+    "food": 45,
+    "foodStamina": 35,
+    "foodBurnTime": 23,
+    "foodRegen": 3,
+    "foodColor": "#800018",
+    "craftingStation": "rk_grill",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "Entrails", "Amount": 2},
+      {"Item": "Bloodbag", "Amount": 2},
+      {"Item": "Thistle", "Amount": 1},
+      {"Item": "DeerMeat", "Amount": 1}
+    ]
+  },
+  "rk_kabob": {
+    "name": "Kabob",
+    "description": "Bone Appetit good Viking!",
+    "weight": 0.5,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 55,
+    "foodStamina": 30,
+    "foodBurnTime": 25,
+    "foodRegen": 3,
+    "foodColor": "#e0e0e0",
+    "craftingStation": "rk_griddle",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "Turnip", "Amount": 1},
+      {"Item": "Carrot", "Amount": 2},
+      {"Item": "WolfMeat", "Amount": 1},
+      {"Item": "BoneFragments", "Amount": 2}
+    ]
+  },
+  "rk_smokedfish": {
+    "name": "SmokedFish",
+    "description": "Here fishy fishy fishy! Jump on in to my smoker now please.",
+    "weight": 0.5,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 45,
+    "foodStamina": 20,
+    "foodBurnTime": 20,
+    "foodRegen": 3,
+    "foodColor": "#674a3a",
+    "craftingStation": "rk_griddle",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "FishRaw", "Amount": 1},
+      {"Item": "salt", "Amount": 1}
+    ]
+  },
+  "rk_pancake": {
+    "name": "Pancakes",
+    "description": "The civilized form of flappers.",
+    "weight": 0.5,
+    "maxStackSize": 20,
+    "variants": null,
+    "food": 35,
+    "foodStamina": 50,
+    "foodBurnTime": 28,
+    "foodRegen": 4,
+    "foodColor": "#422c15",
+    "craftingStation": "rk_grill",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "Honey", "Amount": 2},
+      {"Item": "BarleyFlour", "Amount": 3},
+      {"Item": "rk_butter", "Amount": 4},
+      {"Item": "rk_egg", "Amount": 2}
+    ]
+  },
+  "rk_pizza": {
+    "name": "Pizza",
+    "description": "We must have all the things, then we add bread.",
+    "weight": 1,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 85,
+    "foodStamina": 55,
+    "foodBurnTime": 30,
+    "foodRegen": 3,
+    "foodColor": "#ce703e",
+    "craftingStation": "rk_grill",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "tomato", "Amount": 2},
+      {"Item": "BarleyFlour", "Amount": 1},
+      {"Item": "cheese", "Amount": 1},
+      {"Item": "DeerMeat", "Amount": 2}
+    ]
+  },
+  "rk_friedloxmeat": {
+    "name": "Chicken Fried Lox Meat",
+    "description": "You know I like my chicken fried... Chicken Fried Lox that is.",
+    "weight": 1,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 75,
+    "foodStamina": 35,
+    "foodBurnTime": 28,
+    "foodRegen": 3,
+    "foodColor": "#644d2a",
+    "craftingStation": "rk_grill",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "LoxMeat", "Amount": 1},
+      {"Item": "BarleyFlour", "Amount": 1},
+      {"Item": "rk_egg", "Amount": 1},
+      {"Item": "rk_butter", "Amount": 1}
+    ]
+  },
+  "rk_candiedturnip": {
+    "name": "Candied Turnip",
+    "description": "Who doesn't love a good Viking desert?",
+    "weight": 1,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 30,
+    "foodStamina": 55,
+    "foodBurnTime": 30,
+    "foodRegen": 4,
+    "foodColor": "#877879",
+    "craftingStation": "rk_grill",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "Thistle", "Amount": 1},
+      {"Item": "Honey", "Amount": 2},
+      {"Item": "Turnip", "Amount": 2}
+    ]
+  },
+  "rk_porridge": {
+    "name": "Porridge",
+    "description": "Not too hot, not too cold, this porridge is just right!",
+    "weight": 0.5,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 40,
+    "foodStamina": 70,
+    "foodBurnTime": 35,
+    "foodRegen": 4,
+    "foodColor": "#a6958b",
+    "craftingStation": "rk_grill",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "Barley", "Amount": 2},
+      {"Item": "Cloudberry", "Amount": 4},
+      {"Item": "Honey", "Amount": 2},
+      {"Item": "rk_butter", "Amount": 1}
+    ]
+  },
+  "rk_omlette": {
+    "name": "Omlette",
+    "description": "Healthy delicious omlette",
+    "weight": 0.5,
+    "maxStackSize": 20,
+    "variants": null,
+    "food": 55,
+    "foodStamina": 35,
+    "foodBurnTime": 25,
+    "foodRegen": 3,
+    "foodColor": "#c7c877",
+    "craftingStation": "rk_griddle",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "rk_egg", "Amount": 2},
+      {"Item": "Thistle", "Amount": 2},
+      {"Item": "rk_pork", "Amount": 1},
+      {"Item": "rk_butter", "Amount": 1}
+    ]
+  },
+  "rk_glazedcarrots": {
+    "name": "Honey Glazed Carrots",
+    "description": "What's up doc?",
+    "weight": 0.5,
+    "maxStackSize": 20,
+    "variants": null,
+    "food": 20,
+    "foodStamina": 40,
+    "foodBurnTime": 20,
+    "foodRegen": 3,
+    "foodColor": "#ce703e",
+    "craftingStation": "rk_griddle",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "Carrot", "Amount": 3},
+      {"Item": "Honey", "Amount": 2},
+      {"Item": "Dandelion", "Amount": 2}
+    ]
+  },
+  "rk_porkrind": {
+    "name": "Pork Rinds",
+    "description": "Fried WHAT now you say?!",
+    "weight": 0.5,
+    "maxStackSize": 20,
+    "variants": null,
+    "food": 30,
+    "foodStamina": 15,
+    "foodBurnTime": 20,
+    "foodRegen": 2,
+    "foodColor": "#9f6a45",
+    "craftingStation": "rk_griddle",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "LeatherScraps", "Amount": 1},
+      {"Item": "rk_pork", "Amount": 1}
+    ]
+  },
+  "rk_mead": {
+    "name": "Mead",
+    "description": "What does the glow mean? Good stuff!",
+    "weight": 1,
+    "maxStackSize": 20,
+    "variants": null,
+    "food": 10,
+    "foodStamina": 10,
+    "foodBurnTime": 60,
+    "foodRegen": 12,
+    "foodColor": "#69dbc9",
+    "craftingStation": "rk_prep",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "Barley", "Amount": 3},
+      {"Item": "Honey", "Amount": 4}
+    ]
+  },
+  "rk_fishstew": {
+    "name": "Fish Stew",
+    "description": "Yummy fishy stew.",
+    "weight": 0.5,
+    "maxStackSize": 20,
+    "variants": null,
+    "food": 50,
+    "foodStamina": 30,
+    "foodBurnTime": 26,
+    "foodRegen": 3,
+    "foodColor": "#9677c8",
+    "craftingStation": "rk_prep",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "rk_broth", "Amount": 2},
+      {"Item": "FishRaw", "Amount": 2},
+      {"Item": "Thistle", "Amount": 2},
+      {"Item": "rk_egg", "Amount": 2}
+    ]
+  },
+  "rk_moochi": {
+    "name": "Moochi",
+    "description": "Moochi time!",
+    "weight": 0.5,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 70,
+    "foodStamina": 45,
+    "foodBurnTime": 30,
+    "foodRegen": 3,
+    "foodColor": "#7bf1ff",
+    "craftingStation": "rk_prep",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "rk_dragonegg", "Amount": 1},
+      {"Item": "Honey", "Amount": 2},
+      {"Item": "FreezeGland", "Amount": 1},
+      {"Item": "Blueberries", "Amount": 4}
+    ]
+  },
+  "rk_latte": {
+    "name": "Spice Latte",
+    "description": "A special drink for a very special viking!",
+    "weight": 0.5,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 40,
+    "foodStamina": 70,
+    "foodBurnTime": 25,
+    "foodRegen": 6,
+    "foodColor": "#1f1916",
+    "craftingStation": "rk_prep",
+    "amount": 2,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "Crystal", "Amount": 2},
+      {"Item": "Barley", "Amount": 2},
+      {"Item": "Honey", "Amount": 10}
+    ]
+  },
+  "rk_nut_ella": {
+    "name": "Nut-Ella",
+    "description": "Delicious on everything!",
+    "weight": 1,
+    "maxStackSize": 20,
+    "variants": null,
+    "food": 10,
+    "foodStamina": 10,
+    "foodBurnTime": 15,
+    "foodRegen": 4,
+    "foodColor": "#543826",
+    "craftingStation": "rk_prep",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "BeechSeeds", "Amount": 4},
+      {"Item": "rk_butter", "Amount": 1}
+    ]
+  },
+  "rk_butter": {
+    "name": "Carrot Butter",
+    "description": "A nessessary addition to many meals",
+    "weight": 0.5,
+    "maxStackSize": 30,
+    "variants": null,
+    "food": 10,
+    "foodStamina": 10,
+    "foodBurnTime": 15,
+    "foodRegen": 4,
+    "foodColor": "#c89d5a",
+    "craftingStation": "rk_prep",
+    "amount": 1,
+    "consumeStatusEffect": null,
+    "requirements": [
+      {"Item": "CarrotSeeds", "Amount": 5}
+    ]
+  },
+  "rk_firecream": {
+    "name": "Fire Cream",
+    "description": "Ghost peppers got nothin' on this. You ready to be the burn?",
+    "weight": 0.5,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 50,
+    "foodStamina": 50,
+    "foodBurnTime": 20,
+    "foodRegen": 4,
+    "foodColor": "#ce3e47",
+    "craftingStation": "rk_prep",
+    "amount": 2,
+    "consumeStatusEffect": "frost resist",
+    "requirements": [
+      {"Item": "SurtlingCore", "Amount": 4},
+      {"Item": "Raspberry", "Amount": 2},
+      {"Item": "Honey", "Amount": 4},
+      {"Item": "rk_dragonegg", "Amount": 2}
+    ]
+  },
+  "rk_electriccream": {
+    "name": "Electric Cream",
+    "description": "That will wake you up, put pep in your step, and zap that poision's strength.",
+    "weight": 0.5,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 50,
+    "foodStamina": 50,
+    "foodBurnTime": 20,
+    "foodRegen": 4,
+    "foodColor": "#fdfdfd",
+    "craftingStation": "rk_prep",
+    "amount": 2,
+    "consumeStatusEffect": "poision resist",
+    "requirements": [
+      {"Item": "Crystal", "Amount": 4},
+      {"Item": "Cloudberry", "Amount": 2},
+      {"Item": "Honey", "Amount": 4},
+      {"Item": "rk_dragonegg", "Amount": 2}
+    ]
+  },
+  "rk_acidcream": {
+    "name": "Acid Cream Cone",
+    "description": "Wait, this has WHAT in it?",
+    "weight": 0.5,
+    "maxStackSize": 10,
+    "variants": null,
+    "food": 50,
+    "foodStamina": 50,
+    "foodBurnTime": 20,
+    "foodRegen": 4,
+    "foodColor": "#41ce3e",
+    "craftingStation": "rk_prep",
+    "amount": 2,
+    "consumeStatusEffect": "electric resist",
+    "requirements": [
+      {"Item": "Guck", "Amount": 4},
+      {"Item": "MushroomYellow", "Amount": 10},
+      {"Item": "Honey", "Amount": 4},
+      {"Item": "rk_dragonegg", "Amount": 2}
+    ]
+  }
+}

@@ -802,7 +802,7 @@
 				"amount": 10,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Cloudberries",
+				"raw_name": "Cloudberry",
 				"var_name": "$item_cloudberries"
 			}
 		]
@@ -1401,7 +1401,7 @@
 				"amount": 1,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Cooked deer meat",
+				"raw_name": "CookedDeerMeat",
 				"var_name": "$item_deer_meat_cooked"
 			},
 			{
@@ -1458,7 +1458,7 @@
 				"amount": 2,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Cooked fish",
+				"raw_name": "FishCooked",
 				"var_name": "$item_fish_cooked"
 			},
 			{
@@ -1856,14 +1856,14 @@
 				"amount": 2,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Cloudberries",
+				"raw_name": "Cloudberry",
 				"var_name": "$item_cloudberries"
 			},
 			{
 				"amount": 2,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Lox meat",
+				"raw_name": "LoxMeat",
 				"var_name": "$item_loxmeat"
 			},
 			{
@@ -2041,7 +2041,7 @@
 				"amount": 10,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Raspberries",
+				"raw_name": "Raspberry",
 				"var_name": "$item_raspberries"
 			},
 			{
@@ -2077,7 +2077,7 @@
 				"amount": 10,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Raspberries",
+				"raw_name": "Raspberry",
 				"var_name": "$item_raspberries"
 			},
 			{
@@ -2130,7 +2130,7 @@
 				"amount": 10,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Cloudberries",
+				"raw_name": "Cloudberry",
 				"var_name": "$item_cloudberries"
 			},
 			{
@@ -2159,7 +2159,7 @@
 				"amount": 10,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Raspberries",
+				"raw_name": "Raspberry",
 				"var_name": "$item_raspberries"
 			},
 			{
@@ -2188,7 +2188,7 @@
 				"amount": 10,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Raspberries",
+				"raw_name": "Raspberry",
 				"var_name": "$item_raspberries"
 			},
 			{
@@ -2384,7 +2384,7 @@
 				"amount": 1,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Raspberries",
+				"raw_name": "Raspberry",
 				"var_name": "$item_raspberries"
 			},
 			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" }
@@ -2406,7 +2406,7 @@
 				"amount": 8,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Raspberries",
+				"raw_name": "Raspberry",
 				"var_name": "$item_raspberries"
 			},
 			{
@@ -2505,7 +2505,7 @@
 				"amount": 1,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Cooked serpent meat",
+				"raw_name": "SerpentMeatCooked",
 				"var_name": "$item_serpentmeatcooked"
 			},
 			{ "amount": 2, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" }
@@ -2830,7 +2830,7 @@
 				"amount": 2,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Raspberries",
+				"raw_name": "Raspberry",
 				"var_name": "$item_raspberries"
 			},
 			{
@@ -3310,7 +3310,7 @@
 				"amount": 1,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Wolf meat",
+				"raw_name": "WolfMeat",
 				"var_name": "$item_wolf_meat"
 			},
 			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Honey", "var_name": "$item_honey" }
@@ -3332,7 +3332,7 @@
 				"amount": 1,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Wolf meat",
+				"raw_name": "WolfMeat",
 				"var_name": "$item_wolf_meat"
 			},
 			{
@@ -3346,7 +3346,7 @@
 		]
 	},
 	{
-		"raw_name": "Cooked deer meat",
+		"raw_name": "CookedDeerMeat",
 		"var_name": "$item_wolf_skewer",
 		"true_name": "Recipe_CookedDeerMeat",
 		"true_crafting_station_name": "piece_cookingstation",
@@ -3361,7 +3361,7 @@
 		]
 	},
 	{
-		"raw_name": "Cooked lox meat",
+		"raw_name": "CookedLoxMeat",
 		"var_name": "$item_wolf_skewer",
 		"true_name": "Recipe_CookedLoxMeat",
 		"true_crafting_station_name": "piece_ironcookingstation",
@@ -3370,7 +3370,7 @@
 				"amount": 1,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Lox meat",
+				"raw_name": "LoxMeat",
 				"var_name": "$item_wolf_meat"
 			}
 		]
@@ -3400,13 +3400,13 @@
 				"amount": 1,
 				"amount_per_level": 1,
 				"recover": true,
-				"raw_name": "Wolf meat",
+				"raw_name": "WolfMeat",
 				"var_name": "$item_wolf_meat"
 			}
 		]
 	},
 	{
-		"raw_name": "Cooked fish",
+		"raw_name": "FishCooked",
 		"var_name": "$item_wolf_skewer",
 		"true_name": "Recipe_FishCooked",
 		"true_crafting_station_name": "piece_cookingstation",
@@ -3421,7 +3421,7 @@
 		]
 	},
 	{
-		"raw_name": "Grilled Neck tail",
+		"raw_name": "NeckTailGrilled",
 		"var_name": "$item_wolf_skewer",
 		"true_name": "Recipe_NeckTailGrilled",
 		"true_crafting_station_name": "piece_cookingstation",
@@ -3436,7 +3436,7 @@
 		]
 	},
 	{
-		"raw_name": "Cooked serpent meat",
+		"raw_name": "SerpentMeatCooked",
 		"var_name": "$item_wolf_skewer",
 		"true_name": "Recipe_SerpentMeatCooked",
 		"true_crafting_station_name": "piece_ironcookingstation",

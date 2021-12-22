@@ -11,6 +11,8 @@ import style from './style.module.scss';
 
 const FoodTable = () => {
 	const [valheimFood, setValheimFood] = useState(false);
+	const [valharvestFood, setValharvestFood] = useState(true);
+	const [boneAppetitFood, setBoneAppetitFood] = useState(false);
 
 	const headerStyle = {
 		padding: '5px',
@@ -142,18 +144,38 @@ const FoodTable = () => {
 		}
 	];
 
-	const handleValheimFood = () => {
+	const handleValharvestFoods = () => {
+		setValharvestFood(!valharvestFood);
+	};
+
+	const handleBoneAppetitFoods = () => {
+		setBoneAppetitFood(!boneAppetitFood);
+	};
+
+	const handleValheimFoods = () => {
 		setValheimFood(!valheimFood);
 	};
 
-	const foodList = parseFoods(valheimFood);
+	const foodList = parseFoods(valharvestFood, boneAppetitFood, valheimFood);
 
 	return (
 		<div>
 			<p>
 				<Checkbox
+					checked={valharvestFood}
+					onChange={handleValharvestFoods}
+					inputProps={{ 'aria-label': 'controlled' }}
+				/>
+				Show Valharvest Foods
+				<Checkbox
+					checked={boneAppetitFood}
+					onChange={handleBoneAppetitFoods}
+					inputProps={{ 'aria-label': 'controlled' }}
+				/>
+				Show BoneAppetit Foods
+				<Checkbox
 					checked={valheimFood}
-					onChange={handleValheimFood}
+					onChange={handleValheimFoods}
 					inputProps={{ 'aria-label': 'controlled' }}
 				/>
 				Show Valheim Foods
