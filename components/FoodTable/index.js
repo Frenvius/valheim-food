@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Checkbox from '@mui/material/Checkbox';
 import MaterialTable from '@material-table/core';
 import { styled } from '@mui/material/styles';
-import Tooltip, { TooltipProps, tooltipClasses } from '@mui/material/Tooltip';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
 import parseFoods from '../data/foods';
 import tableIcons from '../tableIcons';
@@ -22,7 +22,7 @@ const FoodTable = () => {
 
 	const HtmlTooltip = styled(({ className, ...props }) => (
 		<Tooltip {...props} classes={{ popper: className }} placement="top" arrow />
-	))(({ theme }) => ({
+	))(() => ({
 		[`& .${tooltipClasses.tooltip}`]: {
 			backgroundImage: 'url("/img/card-bg.png")',
 			backgroundSize: 'cover',
@@ -106,7 +106,27 @@ const FoodTable = () => {
 			width: 80,
 			align: 'left',
 			cellStyle: { padding: '5px' },
-			headerStyle: { padding: '5px' }
+			headerStyle: { padding: '5px' },
+			render: rowData => {
+				const station = rowData.station;
+				const stationImg = `/img/${station}_icon.png`;
+				return (
+					<div style={{ width: '32px' }}>
+						{station && (
+							<HtmlTooltip title={
+								<div className={style.stationStyle}>
+									{/* eslint-disable-next-line @next/next/no-img-element */}
+									<img src={stationImg} alt={`${station}`} width="128px" />
+									<span>{station}</span>
+								</div>
+							}>
+								{/* eslint-disable-next-line @next/next/no-img-element */}
+								<img src={stationImg} alt={`${station}`} width="32px" />
+							</HtmlTooltip>
+						)}
+					</div>
+				);
+			}
 		},
 		{
 			field: 'recipe',

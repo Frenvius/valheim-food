@@ -3344,5 +3344,110 @@
 			},
 			{ "amount": 1, "amount_per_level": 1, "recover": true, "raw_name": "Onion", "var_name": "$item_onion" }
 		]
+	},
+	{
+		"raw_name": "Cooked deer meat",
+		"var_name": "$item_wolf_skewer",
+		"true_name": "Recipe_CookedDeerMeat",
+		"true_crafting_station_name": "piece_cookingstation",
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "DeerMeat",
+				"var_name": "$item_wolf_meat"
+			}
+		]
+	},
+	{
+		"raw_name": "Cooked lox meat",
+		"var_name": "$item_wolf_skewer",
+		"true_name": "Recipe_CookedLoxMeat",
+		"true_crafting_station_name": "Piece_ironcookingstation",
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Lox meat",
+				"var_name": "$item_wolf_meat"
+			}
+		]
+	},
+	{
+		"raw_name": "Cooked boar meat",
+		"var_name": "$item_wolf_skewer",
+		"true_name": "Recipe_CookedMeat",
+		"true_crafting_station_name": "piece_cookingstation",
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Boar meat",
+				"var_name": "$item_wolf_meat"
+			}
+		]
+	},
+	{
+		"raw_name": "Cooked wolf meat",
+		"var_name": "$item_wolf_skewer",
+		"true_name": "Recipe_CookedWolfMeat",
+		"true_crafting_station_name": "piece_cookingstation",
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Wolf meat",
+				"var_name": "$item_wolf_meat"
+			}
+		]
+	},
+	{
+		"raw_name": "Cooked fish",
+		"var_name": "$item_wolf_skewer",
+		"true_name": "Recipe_FishCooked",
+		"true_crafting_station_name": "piece_cookingstation",
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "FishRaw",
+				"var_name": "$item_wolf_meat"
+			}
+		]
+	},
+	{
+		"raw_name": "Grilled Neck tail",
+		"var_name": "$item_wolf_skewer",
+		"true_name": "Recipe_NeckTailGrilled",
+		"true_crafting_station_name": "piece_cookingstation",
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Neck tail",
+				"var_name": "$item_wolf_meat"
+			}
+		]
+	},
+	{
+		"raw_name": "Cooked serpent meat",
+		"var_name": "$item_wolf_skewer",
+		"true_name": "Recipe_SerpentMeatCooked",
+		"true_crafting_station_name": "piece_ironcookingstation",
+		"requirements": [
+			{
+				"amount": 1,
+				"amount_per_level": 1,
+				"recover": true,
+				"raw_name": "Serpent meat",
+				"var_name": "$item_wolf_meat"
+			}
+		]
 	}
 ]

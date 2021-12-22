@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
 				<link rel="shortcut icon" href="/favicon.ico" />
 			</Head>
 			<AppBar position="static">
-				<Toolbar variant="dense">
+				<Toolbar variant="dense" className={styles.layout__navbar}>
 					<Typography variant="h6" color="inherit" component="div">
 						Valharvest Food List
 					</Typography>

@@ -1,7 +1,29 @@
 .foodTable {
-  svg {
-    width: 15px;
-    margin-left: 0px;
-    margin-right: -8px;
-  }
+	svg {
+		width: 15px;
+		margin-left: 0;
+		margin-right: -8px;
+	}
+}
+
+.stationStyle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: calc(100% + 16px);
+		height: 30px;
+		color: #495366;
+		font-size: 16px;
+		font-weight: bold;
+		margin-top: 5px;
+		margin-bottom: -4px;
+		background-color: #e9e5dc;
+		border-radius: 0 0 5px 5px;
+	}
 }
