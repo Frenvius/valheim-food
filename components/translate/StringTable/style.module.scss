@@ -1,0 +1,33 @@
+.languageOption {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.stringTable {
+	[class*='Pagination'] {
+		display: none;
+	}
+
+	[class*='MuiToolbar'] {
+		min-height: 20px;
+		padding: 0;
+	}
+
+	[class*='MuiPaper'] {
+		box-shadow: none;
+	}
+}
+
+.pending {
+	display: inline-block;
+	width: 200px;
+	height: 45px;
+	margin: 8px 8px 5px;
+
+	span {
+		display: flex;
+		height: 100%;
+		align-items: flex-end;
+	}
+}

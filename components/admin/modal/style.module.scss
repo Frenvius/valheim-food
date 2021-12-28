@@ -1,0 +1,17 @@
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	background-color: #ffffff;
+	box-shadow: #495366 0px 0px 10px;
+
+	[class*="Pagination"] {
+		display: none;
+	}
+
+	[class*="MuiToolbar"] {
+		min-height: 20px;
+	}
+}

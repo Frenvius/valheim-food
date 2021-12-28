@@ -31,6 +31,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		position: relative;
 		width: 62px;
 		border-radius: 8px;
 		background-color: #e9e5dc;
@@ -39,7 +40,6 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			color: #495366;
 			width: 25px;
 			height: 40px;
 			text-align: center;
@@ -50,9 +50,16 @@
 		img {
 			width: 40px;
 			padding: 3px;
-			border-radius: 8px 8px 8px 0;
+			z-index: 5;
+		}
+
+		&_bg {
 			background-image: url('/img/card-bg.png');
 			background-size: cover;
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 0;
 		}
 	}
 

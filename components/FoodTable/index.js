@@ -4,12 +4,12 @@ import MaterialTable from '@material-table/core';
 import { styled } from '@mui/material/styles';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
-import parseFoods from '../data/foods';
-import tableIcons from '../tableIcons';
+import parseFoods from './data/foods';
 import RecipeCell from './RecipeCell';
+import HtmlTooltip from '../commons/HtmlTooltip';
 import style from './style.module.scss';
 
-const FoodTable = () => {
+const FoodTable = ({ mode }) => {
 	const [valheimFood, setValheimFood] = useState(false);
 	const [valharvestFood, setValharvestFood] = useState(true);
 	const [boneAppetitFood, setBoneAppetitFood] = useState(false);
@@ -21,17 +21,6 @@ const FoodTable = () => {
 			width: '20px'
 		}
 	};
-
-	const HtmlTooltip = styled(({ className, ...props }) => (
-		<Tooltip {...props} classes={{ popper: className }} placement="top" arrow />
-	))(() => ({
-		[`& .${tooltipClasses.tooltip}`]: {
-			backgroundImage: 'url("/img/card-bg.png")',
-			backgroundSize: 'cover',
-			backgroundColor: '#707070',
-			maxWidth: 220
-		}
-	}));
 
 	const columns = [
 		{
@@ -115,13 +104,15 @@ const FoodTable = () => {
 				return (
 					<div style={{ width: '32px' }}>
 						{station && (
-							<HtmlTooltip title={
-								<div className={style.stationStyle}>
-									{/* eslint-disable-next-line @next/next/no-img-element */}
-									<img src={stationImg} alt={`${station}`} width="128px" />
-									<span>{station}</span>
-								</div>
-							}>
+							<HtmlTooltip
+								title={
+									<div className={style.stationStyle}>
+										{/* eslint-disable-next-line @next/next/no-img-element */}
+										<img src={stationImg} alt={`${station}`} width="128px" />
+										<span>{station}</span>
+									</div>
+								}
+							>
 								{/* eslint-disable-next-line @next/next/no-img-element */}
 								<img src={stationImg} alt={`${station}`} width="32px" />
 							</HtmlTooltip>
@@ -139,7 +130,7 @@ const FoodTable = () => {
 			cellStyle: { padding: '2px' },
 			headerStyle: { padding: '2px', textAlign: 'center' },
 			render: rowData => {
-				return <RecipeCell ingredients={rowData.recipe} />;
+				return <RecipeCell ingredients={rowData.recipe} mode={mode} />;
 			}
 		}
 	];
@@ -183,14 +174,13 @@ const FoodTable = () => {
 			<div className={style.foodTable}>
 				<MaterialTable
 					title="Foods"
-					icons={tableIcons}
 					columns={columns}
 					data={foodList}
 					className={style.foodTable}
 					options={{
 						search: false,
 						draggable: false,
-						pageSize: -1,
+						pageSize: 1000,
 						emptyRowsWhenPaging: false,
 						showTitle: false,
 						rowStyle: {

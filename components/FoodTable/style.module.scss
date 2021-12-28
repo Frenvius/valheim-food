@@ -8,6 +8,14 @@
 	[class*="Pagination"] {
 		display: none;
 	}
+
+	[class*="MuiToolbar"] {
+		min-height: 20px;
+	}
+
+	[class*="MuiPaper"] {
+		box-shadow: none;
+	}
 }
 
 .stationStyle {
