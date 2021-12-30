@@ -14,6 +14,15 @@ jobs:
         node-version: [12.x]
     steps:
     - uses: actions/checkout@v2
+    - name: Create env file
+      run: |
+        touch .env
+        echo MYSQL_HOST=${{ secrets.MYSQL_HOST }} >> .env
+        echo MYSQL_USER=${{ secrets.MYSQL_USER }} >> .env
+        echo MYSQL_PASS=${{ secrets.MYSQL_PASS }} >> .env
+        echo MYSQL_NAME=${{ secrets.MYSQL_NAME }} >> .env
+        echo SECRET=${{ secrets.API_SECRET }} >> .env
+        cat .env
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
