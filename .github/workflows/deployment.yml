@@ -20,7 +20,7 @@ jobs:
         uses: garygrossgarten/github-action-scp@release
         with:
           local: .next
-          remote: /www/wwwroot/valharvest/
+          remote: /www/wwwroot/valharvest/.next/
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
