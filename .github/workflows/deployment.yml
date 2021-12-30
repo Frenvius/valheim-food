@@ -19,9 +19,10 @@ jobs:
       - name: Copy folder content recursively to vps
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: build
+          local: .next
           remote: /www/wwwroot/valharvest/
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
+          dotfiles: true
       - run: echo "🍏 This job's status is ${{ job.status }}."
