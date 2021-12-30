@@ -3,13 +3,23 @@ import Box from '@mui/material/Box';
 import MaterialTable from '@material-table/core';
 import Modal from '@mui/material/Modal';
 
-import { diffTableStringArray } from '../../translate/data';
+import { diffTableStringArray, getTranslatedStrings, tableStringArray, unescapeJson } from '../../translate/data';
 import style from './style.module.scss';
 
 const TranslateModal = ({ data, open, setOpen }) => {
+	const [dataTable, setDataTable] = React.useState([]);
 	const handleClose = () => {
 		setOpen(false);
 	};
+
+	React.useEffect(() => {
+		getTranslatedStrings().then((res) => {
+			const englishStrings = unescapeJson(res.filter((item) => item.name === 'English')[0].strings);
+			const languageString = unescapeJson(res.filter((item) => item.name === data.language)[0].strings);
+
+			setDataTable(diffTableStringArray(languageString, JSON.parse(data.json), englishStrings));
+		});
+	}, [open]);
 
 	const columns = [
 		{
@@ -37,7 +47,7 @@ const TranslateModal = ({ data, open, setOpen }) => {
 			<Box className={style.modal}>
 				<MaterialTable
 					columns={columns}
-					data={diffTableStringArray(data.language, JSON.parse(data.json))}
+					data={dataTable}
 					options={{
 						search: false,
 						draggable: false,

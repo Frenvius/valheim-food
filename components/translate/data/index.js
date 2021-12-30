@@ -1,54 +1,26 @@
-import foodStrings from './English/foods.json';
-import ingredientStrings from './English/ingredients.json';
-import pieceStrings from './English/pieces.json';
-import plantStrings from './English/plants.json';
 import React from 'react';
+import { translateService } from 'services';
 
-const allStrings = {
-	...foodStrings,
-	...ingredientStrings,
-	...pieceStrings,
-	...plantStrings
-};
-
-const getAllDescriptions = () => {
+const getAllDescriptions = (englishStrings) => {
 	const descriptions = {};
-	Object.keys(allStrings).forEach(key => {
+	Object.keys(englishStrings).forEach((key) => {
 		if (key.includes('_desc')) {
-			descriptions[key] = allStrings[key];
+			descriptions[key] = englishStrings[key];
 		}
 	});
 	return descriptions;
 };
 
-const getTranslatedStrings = language => {
-	try {
-		const food = require(`./${language}/foods.json`);
-		const ingredient = require(`./${language}/ingredients.json`);
-		const piece = require(`./${language}/pieces.json`);
-		const plant = require(`./${language}/plants.json`);
-
-		return {
-			...food,
-			...ingredient,
-			...piece,
-			...plant
-		};
-	} catch (error) {
-		const strings = require(`./${language}/strings.json`);
-
-		return {
-			...strings
-		};
-	}
+const getTranslatedStrings = async () => {
+	return await translateService.getAllStrings();
 };
 
-const getPercentageColors = percentage => {
+const getPercentageColors = (percentage) => {
 	const colors = {
-		'0': '#ff0000',
-		'25': '#ff7f00',
-		'50': '#ffcb00',
-		'100': '#009300'
+		0: '#ff0000',
+		25: '#ff7f00',
+		50: '#ffcb00',
+		100: '#009300'
 	};
 
 	switch (true) {
@@ -65,42 +37,47 @@ const getPercentageColors = percentage => {
 	}
 };
 
-const getTranslatedStringsPercentage = language => {
-	const translatedStrings = getStringsWithoutDesc(language);
-	const totalStrings = Object.keys(getStringsWithoutDesc('English')).length;
-	const translatedStringsCount = Object.keys(translatedStrings).length;
+const unescapeJson = (json) => {
+	if (json.includes('\\')) {
+		return JSON.parse(json?.replace(/\\/g,""));
+	} else {
+		return JSON.parse(json);
+	}
+};
+
+const getTranslatedStringsPercentage = (translated, englishStrings) => {
+	const totalStrings = Object.keys(englishStrings).length;
+	const translatedStringsCount = Object.keys(translated).length;
 	const percentage = Math.round((translatedStringsCount / totalStrings) * 100);
 	const color = getPercentageColors(percentage);
 	return <span style={{ color: `${color}`, marginLeft: '15px' }}>{percentage}%</span>;
 };
 
-const tableStringArray = language => {
+const tableStringArray = (languageString, englishStrings) => {
 	let strings = [];
 
-	const allTexts = getTranslatedStrings(language);
-
-	for (const key in allStrings) {
-		if (allStrings[key] !== 'ㅤ') {
+	for (const key in englishStrings) {
+		if (englishStrings[key] !== 'u3164') {
 			strings.push({
 				string: key,
-				english: allStrings[key],
-				translate: allTexts[key]
+				english: englishStrings[key],
+				translate: languageString[key]
 			});
 		}
 	}
+	console.log(strings)
 	return strings;
 };
 
-const diffTableStringArray = (language, strings) => {
+const diffTableStringArray = (languageString, strings, englishStrings) => {
 	const tableStrings = [];
-	const allTexts = getTranslatedStrings(language);
 
 	for (const key in strings) {
-		if (strings[key] !== 'ㅤ') {
-			if (allTexts[key] !== strings[key]) {
+		if (strings[key] !== 'u3164') {
+			if (languageString[key] !== strings[key]) {
 				tableStrings.push({
 					string: key,
-					original: allStrings[key],
+					original: englishStrings[key],
 					translate: strings[key]
 				});
 			}
@@ -109,23 +86,8 @@ const diffTableStringArray = (language, strings) => {
 	return tableStrings;
 };
 
-const getStringsWithoutDesc = language => {
-	let strings = {};
-
-	const allTexts = getTranslatedStrings(language);
-
-	for (const key in allStrings) {
-		if (allStrings[key] !== 'ㅤ') {
-			if (allTexts[key] !== undefined) {
-				strings[key] = allTexts[key];
-			}
-		}
-	}
-	return strings;
-};
-
-const convertNewTranslate = (language, newTranslate) => {
-	const descriptions = getAllDescriptions();
+const convertNewTranslate = (englishStrings, newTranslate) => {
+	const descriptions = getAllDescriptions(englishStrings);
 	const newTexts = {};
 
 	for (const key in newTranslate) {
@@ -140,4 +102,11 @@ const convertNewTranslate = (language, newTranslate) => {
 	};
 };
 
-export { tableStringArray, getTranslatedStringsPercentage, convertNewTranslate, diffTableStringArray };
+export {
+	tableStringArray,
+	getTranslatedStringsPercentage,
+	convertNewTranslate,
+	diffTableStringArray,
+	getTranslatedStrings,
+	unescapeJson
+};

@@ -3,24 +3,35 @@ import MaterialTable from '@material-table/core';
 
 import LanguageSelector from './LanguageSelector';
 import style from './style.module.scss';
-import { tableStringArray, convertNewTranslate } from '../data';
+import { tableStringArray, convertNewTranslate, getTranslatedStrings, unescapeJson } from '../data';
+import { translateService } from '../../../services';
 
 const StringTable = () => {
+	const [data, setData] = React.useState([]);
+	const [allStrings, setAllStrings] = React.useState([]);
 	const [language, setLanguage] = React.useState('English');
 	const [countPending, setCountPending] = React.useState(0);
+	const [englishStrings, setEnglishStrings] = React.useState([]);
 
-	const handleChange = event => {
+	const handleChange = (event) => {
 		setLanguage(event.target.value);
 	};
 
 	React.useEffect(() => {
-		fetch(`/api/getPending?language=${language}`)
-			.then(res => res.json())
-			.then(res => {
-				if (res) {
-					setCountPending(res.count);
-				}
-			});
+		translateService.getPendingStrings(language).then((res) => {
+			if (res) {
+				setCountPending(res.count);
+			}
+		});
+
+		getTranslatedStrings().then((res) => {
+			const englishStrings = unescapeJson(res.filter((item) => item.name === 'English')[0].strings);
+			const languageString = unescapeJson(res.filter((item) => item.name === language)[0].strings);
+			setEnglishStrings(englishStrings);
+			setAllStrings(res);
+
+			setData(tableStringArray(languageString, englishStrings));
+		});
 	}, [language]);
 
 	const columns = [
@@ -47,11 +58,14 @@ const StringTable = () => {
 		}
 	];
 
-	const data = tableStringArray(language);
-
 	return (
 		<div className={style.stringTable}>
-			<LanguageSelector language={language} handleChange={handleChange} />
+			<LanguageSelector
+				language={language}
+				handleChange={handleChange}
+				translated={allStrings}
+				englishStrings={englishStrings}
+			/>
 			<div className={style.pending} style={{ color: 'red', marginLeft: '15px' }}>
 				<span>{countPending} pending translations</span>
 			</div>
@@ -71,7 +85,7 @@ const StringTable = () => {
 					}
 				}}
 				editable={{
-					onBulkUpdate: changes =>
+					onBulkUpdate: (changes) =>
 						new Promise((resolve, reject) => {
 							const dataUpdate = [...data];
 							for (const key in changes) {
@@ -81,22 +95,16 @@ const StringTable = () => {
 								dataUpdate[index] = newData;
 							}
 
-							const newJson = convertNewTranslate(language, [...dataUpdate]);
+							const newJson = convertNewTranslate(englishStrings,  [...dataUpdate]);
 
 							const dataSend = {
 								language: language,
 								data: newJson
 							};
 
-							fetch('/api/saveTranslate', {
-								method: 'POST',
-								headers: {
-									'Content-Type': 'application/json'
-								},
-								body: JSON.stringify(dataSend)
+							translateService.saveTranslate(dataSend).then(() => {
+								resolve();
 							});
-
-							resolve();
 						})
 				}}
 			/>
