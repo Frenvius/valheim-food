@@ -19,8 +19,8 @@ jobs:
       - name: Copy folder content recursively to vps
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: .next
-          remote: /www/wwwroot/valharvest/.next/
+          local: /
+          remote: /www/wwwroot/valharvest/
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
