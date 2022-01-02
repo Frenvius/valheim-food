@@ -1,6 +1,8 @@
 import itemDropList from './itemdrops.json';
 import recipeList from './recipes.json';
 import valharvestList from './valharvestFoods.json';
+import valharvestConsumables from './consumablesValharvest.json';
+import valharvestNames from './foodNames.json';
 import boneAppetitList from './BoneAppetit.json';
 
 const getRecipeObject = (itemName) => {
@@ -46,12 +48,12 @@ const getValheimRecipe = (prefabName) => {
 
 const parseValharvestFoods = () => {
     const foodArr = [];
-    const json = JSON.stringify(valharvestList);
-    const foodObject = JSON.parse(json);
+    const foodObject = { ...valharvestConsumables, ...valharvestList };
     for(const item in foodObject) {
+        const name = valharvestNames[foodObject[item].name.replace('$','')];
         foodArr.push({
             image: `/img/${item}_icon.png`,
-            name: foodObject[item].name,
+            name: name || foodObject[item].name,
             food: foodObject[item].food,
             stamina: foodObject[item].foodStamina,
             regen: foodObject[item].foodRegen,

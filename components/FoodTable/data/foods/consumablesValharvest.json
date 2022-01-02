@@ -1,0 +1,35 @@
+{
+	"apple": {
+		"name": "Apple",
+		"description": "$apple_desc",
+		"weight": 0.6,
+		"variants": null,
+		"food": 8,
+		"foodStamina": 20,
+		"foodBurnTime": 10,
+		"foodRegen": 1,
+		"maxStackSize": 50,
+		"foodColor": "#9a6331",
+		"amount": 1,
+		"consumeStatusEffect": null,
+		"craftingStation": null,
+		"requirements": []
+
+	},
+	"tomato": {
+		"name": "Tomato",
+		"description": "",
+		"weight": 0.6,
+		"variants": null,
+		"food": 8,
+		"foodStamina": 11,
+		"foodBurnTime": 35,
+		"foodRegen": 1,
+		"maxStackSize": 50,
+		"foodColor": "#9a6331",
+		"amount": 1,
+		"consumeStatusEffect": null,
+		"craftingStation": null,
+		"requirements": []
+	}
+}

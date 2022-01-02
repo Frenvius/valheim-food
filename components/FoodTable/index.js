@@ -47,7 +47,8 @@ const FoodTable = ({ mode }) => {
 			field: 'name',
 			title: 'Name',
 			cellStyle: { padding: '5px' },
-			headerStyle: { padding: '5px' }
+			headerStyle: { padding: '5px' },
+			defaultSort: 'asc'
 		},
 		{
 			field: 'food',
@@ -183,6 +184,7 @@ const FoodTable = ({ mode }) => {
 						pageSize: 1000,
 						emptyRowsWhenPaging: false,
 						showTitle: false,
+						thirdSortClick: false,
 						rowStyle: {
 							padding: '0px'
 						}
