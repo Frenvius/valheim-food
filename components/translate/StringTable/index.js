@@ -3,10 +3,11 @@ import MaterialTable from '@material-table/core';
 
 import LanguageSelector from './LanguageSelector';
 import style from './style.module.scss';
-import { tableStringArray, convertNewTranslate, getTranslatedStrings, unescapeJson } from '../data';
-import { translateService } from '../../../services';
+import { tableStringArray, convertNewTranslate, getTranslatedStrings, unescapeJson, downloadStrings } from '../data';
+import { translateService, userService } from '../../../services';
 
 const StringTable = () => {
+	const [auth, setAuth] = React.useState(false);
 	const [data, setData] = React.useState([]);
 	const [allStrings, setAllStrings] = React.useState([]);
 	const [language, setLanguage] = React.useState('English');
@@ -32,6 +33,9 @@ const StringTable = () => {
 
 			setData(tableStringArray(languageString, englishStrings));
 		});
+
+		const subscription = userService.user.subscribe((x) => setAuth(x));
+		return () => subscription.unsubscribe();
 	}, [language]);
 
 	const columns = [
@@ -58,6 +62,27 @@ const StringTable = () => {
 		}
 	];
 
+	const handleDownloadStrings = (strings) => {
+		let stringsToDownload = {};
+		for (const string of strings) {
+			stringsToDownload[string.string] = string.translate;
+		}
+		const json = JSON.stringify(stringsToDownload);
+		downloadStrings(json, language);
+	};
+
+	let exportFunction;
+	if (auth) {
+		exportFunction = {
+			exportMenu: [
+				{
+					label: 'Export Strings',
+					exportFunc: (cols, datas) => handleDownloadStrings(data)
+				}
+			]
+		};
+	}
+
 	return (
 		<div className={style.stringTable}>
 			<LanguageSelector
@@ -82,7 +107,8 @@ const StringTable = () => {
 					showTitle: false,
 					rowStyle: {
 						padding: '0px'
-					}
+					},
+					...exportFunction
 				}}
 				editable={{
 					onBulkUpdate: (changes) =>
@@ -95,7 +121,7 @@ const StringTable = () => {
 								dataUpdate[index] = newData;
 							}
 
-							const newJson = convertNewTranslate(englishStrings,  [...dataUpdate]);
+							const newJson = convertNewTranslate(englishStrings, [...dataUpdate]);
 
 							const dataSend = {
 								language: language,

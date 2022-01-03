@@ -65,7 +65,6 @@ const tableStringArray = (languageString, englishStrings) => {
 			});
 		}
 	}
-	console.log(strings)
 	return strings;
 };
 
@@ -102,11 +101,26 @@ const convertNewTranslate = (englishStrings, newTranslate) => {
 	};
 };
 
+const downloadStrings = (data, language) => {
+	const blob = new Blob([data], { type: 'text/json' })
+	const a = document.createElement('a')
+	a.download = `${language}.json`
+	a.href = window.URL.createObjectURL(blob)
+	const clickEvt = new MouseEvent('click', {
+		view: window,
+		bubbles: true,
+		cancelable: true,
+	})
+	a.dispatchEvent(clickEvt)
+	a.remove()
+}
+
 export {
 	tableStringArray,
 	getTranslatedStringsPercentage,
 	convertNewTranslate,
 	diffTableStringArray,
 	getTranslatedStrings,
-	unescapeJson
+	unescapeJson,
+	downloadStrings
 };
