@@ -11,9 +11,9 @@ jobs:
     runs-on: self-hosted
     strategy:
       matrix:
-        node-version: [12.x]
+        node: [ 16 ]
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Create env file
       run: |
         touch .env
@@ -24,12 +24,7 @@ jobs:
         echo SECRET=${{ secrets.API_SECRET }} >> .env
         cat .env
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run build --if-present
-    - run: pwd
-    - run: pm2 reload valharvest
-      env:
-        CI: true
+    - run: docker-compose up -d --build
