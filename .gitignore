@@ -37,3 +37,8 @@ yarn-error.log*
 # IDE folders
 .idea
 .vscode
+
+# Ignore Valheim base game images but keep mod images
+/public/img/*
+!/public/img/boneappetit/
+!/public/img/valharvest/
