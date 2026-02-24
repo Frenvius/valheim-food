@@ -2,7 +2,7 @@ FROM oven/bun:latest
 
 ENV TZ=America/Sao_Paulo
 
-ARG NODE_VERSION=18
+ARG NODE_VERSION=20
 RUN apt-get update && apt-get install -y tzdata unzip curl
 RUN curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n \
     && bash n $NODE_VERSION \

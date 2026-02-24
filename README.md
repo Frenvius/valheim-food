@@ -11,24 +11,23 @@ Hosted at: https://valharvest.frenvius.com/
 
 ## Dependencies && Installation
 
-Requires [Node.js](https://nodejs.org/) v14.15.0. Lower versions are likely not going to work.
-
-Install the dependencies and devDependencies (use yarn to use locked package dependencies)
+Install the dependencies using Bun:
 
 ```sh
-yarn
+bun install
 ```
 
 ## Tech
 
 Base
 
-- [React](https://reactjs.org/)
-- [NextJS](https://nextjs.org/)
-- [Typescript](https://www.typescriptlang.org/)
+- [Next.js 15](https://nextjs.org/) (App Router + Turbopack)
+- [React 19](https://reactjs.org/)
+- [TypeScript 5](https://www.typescriptlang.org/)
 
 UI
-- [MUI](https://mui.com/)
+
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ## Credits
 - [MayaSaringan](https://github.com/MayaSaringan/) for the inspiration of the project

@@ -22,7 +22,6 @@ jobs:
         echo MYSQL_PASS=${{ secrets.MYSQL_PASS }} >> .env
         echo MYSQL_NAME=${{ secrets.MYSQL_NAME }} >> .env
         echo SECRET=${{ secrets.API_SECRET }} >> .env
-        cat .env
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
