@@ -1,12 +1,19 @@
 import mysql from "serverless-mysql";
 
+function parseDbUrl(url: string) {
+  const parsed = new URL(url);
+  return {
+    host: parsed.hostname,
+    port: parseInt(parsed.port || "3306"),
+    user: decodeURIComponent(parsed.username),
+    password: decodeURIComponent(parsed.password),
+    database: parsed.pathname.replace(/^\//, ""),
+  };
+}
+
 export const conn = mysql({
   config: {
-    host: process.env.MYSQL_HOST,
-    user: process.env.MYSQL_USER,
-    port: parseInt(process.env.MYSQL_PORT || "3306"),
-    password: process.env.MYSQL_PASS,
-    database: process.env.MYSQL_NAME,
+    ...parseDbUrl(process.env.DATABASE_URL!),
     charset: "utf8mb4_unicode_ci",
   },
 });
