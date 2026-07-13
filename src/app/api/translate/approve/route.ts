@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { query, conn } from "@/adapter/db";
+import { query, getConn } from "@/adapter/db";
 import { getTokenFromRequest, verifyToken } from "@/adapter/auth";
 import { getErrorMessage } from "@/adapter/http";
 import type { ApproveTranslationDto } from "@/domain/types";
@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
     const parsedJson = JSON.parse(json);
     const newJson = { ...strings, ...parsedJson };
     const jsonStr = JSON.stringify(newJson);
-    const escapedJson = conn.escape(jsonStr);
+    const escapedJson = getConn().escape(jsonStr);
 
     await query(
       `UPDATE languages SET strings = ${escapedJson} WHERE name = ?`,

@@ -1,4 +1,4 @@
-import mysql from "serverless-mysql";
+import mysql, { type ServerlessMysql } from "serverless-mysql";
 
 function parseDbUrl(url: string) {
   const parsed = new URL(url);
@@ -11,18 +11,26 @@ function parseDbUrl(url: string) {
   };
 }
 
-export const conn = mysql({
-  config: {
-    ...parseDbUrl(process.env.DATABASE_URL!),
-    charset: "utf8mb4_unicode_ci",
-  },
-});
+let _conn: ServerlessMysql;
+
+export function getConn() {
+  if (!_conn) {
+    _conn = mysql({
+      config: {
+        ...parseDbUrl(process.env.DATABASE_URL!),
+        charset: "utf8mb4_unicode_ci",
+      },
+    });
+  }
+  return _conn;
+}
 
 export async function query<T = unknown>(
   q: string,
   values?: unknown[]
 ): Promise<T> {
   try {
+    const conn = getConn();
     const results = await conn.query<T>(q, values);
     await conn.end();
     return results;

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { query, conn } from "@/adapter/db";
+import { query, getConn } from "@/adapter/db";
 import { getErrorMessage } from "@/adapter/http";
 import type { SaveTranslationDto } from "@/domain/types";
 
@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     }
 
     const json = JSON.stringify(data);
-    const escapedJson = conn.escape(json);
+    const escapedJson = getConn().escape(json);
 
     await query(
       `INSERT INTO translations (language, json) VALUES (?, ${escapedJson})`,
