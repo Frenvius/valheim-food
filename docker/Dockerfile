@@ -2,19 +2,13 @@ FROM oven/bun:latest
 
 ENV TZ=America/Sao_Paulo
 
-ARG NODE_VERSION=20
-RUN apt-get update && apt-get install -y tzdata unzip curl
-RUN curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n \
-    && bash n $NODE_VERSION \
-    && rm n \
-    && npm install -g n
-
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN apt-get update && apt-get install -y tzdata \
+    && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
+    && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
-COPY package.json ./
-COPY bun.lockb ./
+COPY package.json bun.lock ./
 
 RUN bun install
 
